@@ -1,5 +1,9 @@
 # cville_airbnb
-Work on mapping all the locations of Cville Air BnB's from their website. Inclusion on the list does not mean the location is currently active, but it is still in the AirBnB registry and has not been deactivated by the owner.
+Work on mapping all the locations of Cville AirBnB's from their website. Inclusion on the list does not mean the location is currently active, but it is still in the AirBnB registry and has not been deactivated by the owner.
+
+## Homestay Regulations in the City of Charlottesville
+
+The City of Charlottesville Homestay Regulations and Provisional Use Permit application are [here](https://www.charlottesville.gov/DocumentCenter/View/207/Homestay-Provisional-Use-Permit-PDF). These disallow non-owner-occupied short-term rentals in residential zoning, restrict owner-occupied short-term rentals to no more than 6 guests.
 
 ## Why?
 Because I can. Also because it would be handy for folks in the city to have a listing and mapping of those places listed on AirBnB to compare to the licenses to see who is trying to skirt the law
