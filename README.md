@@ -1,5 +1,5 @@
 # cville_airbnb
-Work on mapping all the locations of Cville Air BnB's from their website
+Work on mapping all the locations of Cville Air BnB's from their website. Inclusion on the list does not mean the location is currently active, but it is still in the AirBnB registry and has not been deactivated by the owner.
 
 ## Why?
 Because I can. Also because it would be handy for folks in the city to have a listing and mapping of those places listed on AirBnB to compare to the licenses to see who is trying to skirt the law
