@@ -1,6 +1,6 @@
 ﻿address,link,type, guest capacity, location-y notes,management/owner
 203 Douglas Ave,https://www.airbnb.com/rooms/17337587,basement apt,4,,
-1110 Myrtle St,https://www.airbnb.com/rooms/9129723,accessory dwelling,3,,Stay Charlottesville
+1110 Myrtle St,https://www.airbnb.com/rooms/9129723,accessory dwelling,3,"The Belmont Flat",Stay Charlottesville
 1308 Hampton St,https://www.airbnb.com/rooms/27719797,whole home,4,,
 1308 Hampton St,https://www.airbnb.com/rooms/27576154,basement apt,4,,
 ,https://www.airbnb.com/rooms/7772434,basement apt,3,1117 or 1114 River Court,
@@ -25,6 +25,7 @@
 211 W Main St,https://www.airbnb.com/rooms/13058517,Suite,2,"Townsman Hotel, Merriweather room, 1 of 4",Stay Charlottesville
 420 9th St NW,https://www.airbnb.com/rooms/11094566,accessory dwelling,2,,
 1215 Monticello Rd,https://www.airbnb.com/rooms/45864810,apartment,4,"middle floor, former yoga studio",
+1215 Monticello Rd,https://www.airbnb.com/rooms/5352948, apartment,5, "3rd floor of building, above the former yoga studio", 
 1319 E Market St,https://www.airbnb.com/rooms/25031828,whole home,4,,
 110-112 E Main St,https://www.airbnb.com/rooms/42252665,Suite,2,"The Jeff Hotel, Suite 301",
 124 Franklin St,https://www.airbnb.com/rooms/44012710,basement apt,4,,
@@ -41,7 +42,8 @@
 110-112 E Main St,https://www.airbnb.com/rooms/42245308,Suite,4,"The Jeff Hotel, Suite 201",Guesthouses
 110-112 E Main St,https://www.airbnb.com/rooms/42252428,Suite,2,"The Jeff Hotel, Suite 302", Guesthouses
 110-112 E Main St,https://www.airbnb.com/rooms/42246378,Suite,3,"The Jeff Hotel, Suite 202", Guesthouses
-405 Hedge St,https://www.airbnb.com/rooms/919860,accessory dwelling,6,"""The Recycled House""",
+401 Hedge St,https://www.airbnb.com/rooms/919860,house,6,"""The Recycled House""",
+405 Hedge St, https://www.airbnb.com/rooms/1382393, house, 6, , 
 110-112 E Main St,https://www.airbnb.com/rooms/42251827,Suite,2,"The Jeff Hotel, Suite 303", Guesthouses
 1513 E Market St,https://www.airbnb.com/rooms/45103559,whole home,4,,
 110-112 E Main St,https://www.airbnb.com/rooms/42250924,Suite,4,"The Jeff Hotel, Suite 203", Guesthouses
@@ -107,4 +109,15 @@
 1115 Hilltop Rd, https://www.airbnb.com/rooms/19070344, whole house, 10, , Stay Charlottesville
 104 Buckingham Rd, https://www.airbnb.com/rooms/35822286, whole house, 6, , 
 1459 Oxford Rd, https://www.airbnb.com/rooms/12710108, whole house, 5, , 
+607 Belmont Ave, https://www.airbnb.com/rooms/15949087, guesthouse, 4, , 
+829 Belmont Ave ,https://www.airbnb.com/rooms/35616479, apartment, 2,"The Retro Apartment, Belmont Farmhouse, 1 of 7", Stay Charlottesville
+915 Belmont Ave, https://www.airbnb.com/rooms/35614125, apartment, 4, "The Grove, Belmont Guesthouse, 1 of 4", Stay Charlottesville
+1510 Monticello Rd, https://www.airbnb.com/rooms/25378048, house, 4, , 
+959 Rives St, https://www.airbnb.com/rooms/13712453, townhouse, 6, , 
+907 Blenheim Ave, https://www.airbnb.com/rooms/10983225, accessory dwelling, 2,,
+1392 Avon St, https://www.airbnb.com/rooms/16885224, townhouse, 8,,
+700 Northwood Ave, https://www.airbnb.com/rooms/496282, house, 10,,
+550 E Water St, https://www.airbnb.com/rooms/42021058, apartment, 6,,Stay Charlottesville
+218 W Water St, https://www.airbnb.com/rooms/36136707, apartment, 4,,
+415 Avon St, https://www.airbnb.com/rooms/49732283, apartment, 5,,
 
