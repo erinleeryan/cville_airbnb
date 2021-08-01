@@ -1,0 +1,3213 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5eaa197bc24c4e81b38ec46fcc8c8ce0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5eaa197bc24c4e81b38ec46fcc8c8ce0" ></div>
+        
+</body>
+<script>    
+    
+            var map_5eaa197bc24c4e81b38ec46fcc8c8ce0 = L.map(
+                "map_5eaa197bc24c4e81b38ec46fcc8c8ce0",
+                {
+                    center: [38.03185, -78.477],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e78e894b71664f75a74c8cfe43b547a1 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var marker_b455c3da9c68454f92ef30c77b5165f7 = L.marker(
+                [38.02716920244148, -78.4736997097417],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_4e6abe3db1a54d3684df18d985418aed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bed", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_b455c3da9c68454f92ef30c77b5165f7.setIcon(icon_4e6abe3db1a54d3684df18d985418aed);
+        
+    
+        var popup_7c7358968cee4cc39d9760015a440838 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_961a2cb0441f4fd6b48d3fc743a0dfb2 = $(`<div id="html_961a2cb0441f4fd6b48d3fc743a0dfb2" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 203 DOUGLAS AVE<br><b>Type:</b> apartment<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/17337587">https://www.airbnb.com/rooms/17337587</a> <br></div>`)[0];
+            popup_7c7358968cee4cc39d9760015a440838.setContent(html_961a2cb0441f4fd6b48d3fc743a0dfb2);
+        
+
+        marker_b455c3da9c68454f92ef30c77b5165f7.bindPopup(popup_7c7358968cee4cc39d9760015a440838)
+        ;
+
+        
+    
+    
+            var marker_9238ca97aecf478ebae24a2691392b2a = L.marker(
+                [38.023631835479556, -78.4710793055616],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_081766baa7034d949f9f741fd3db9d6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "key", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_9238ca97aecf478ebae24a2691392b2a.setIcon(icon_081766baa7034d949f9f741fd3db9d6f);
+        
+    
+        var popup_f11f55c7c5114ae3b6d26c21ecf66ebe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9282a817c4954c2893f9a8e11e4d3017 = $(`<div id="html_9282a817c4954c2893f9a8e11e4d3017" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1110 MYRTLE ST<br><b>Type:</b> guesthouse<br><b>Guest Capacity:</b> 3<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/9129723">https://www.airbnb.com/rooms/9129723</a> <br></div>`)[0];
+            popup_f11f55c7c5114ae3b6d26c21ecf66ebe.setContent(html_9282a817c4954c2893f9a8e11e4d3017);
+        
+
+        marker_9238ca97aecf478ebae24a2691392b2a.bindPopup(popup_f11f55c7c5114ae3b6d26c21ecf66ebe)
+        ;
+
+        
+    
+    
+            var marker_2d9d9a5b2c154a6fa31ceaa846ea4d7a = L.marker(
+                [38.01995886396893, -78.47039229337963],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_1ec5703969024a0ab12499375e606f55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_2d9d9a5b2c154a6fa31ceaa846ea4d7a.setIcon(icon_1ec5703969024a0ab12499375e606f55);
+        
+    
+        var popup_360715c78ae64855ac2f574486f84f1e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ca9512ab1cc49d181c8ca11b35a2262 = $(`<div id="html_9ca9512ab1cc49d181c8ca11b35a2262" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1308 HAMPTON ST<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/27719797">https://www.airbnb.com/rooms/27719797</a> <br></div>`)[0];
+            popup_360715c78ae64855ac2f574486f84f1e.setContent(html_9ca9512ab1cc49d181c8ca11b35a2262);
+        
+
+        marker_2d9d9a5b2c154a6fa31ceaa846ea4d7a.bindPopup(popup_360715c78ae64855ac2f574486f84f1e)
+        ;
+
+        
+    
+    
+            var marker_29505c4214a145ec855b74a9eefa9c75 = L.marker(
+                [38.01995886396893, -78.47039229337963],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_d32ab8e6d7e1408e8016be6766945435 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bed", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_29505c4214a145ec855b74a9eefa9c75.setIcon(icon_d32ab8e6d7e1408e8016be6766945435);
+        
+    
+        var popup_0d78998a4c91437d9f1184d305ce2c5e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8bf98b987aa3482f97e846178bf0b741 = $(`<div id="html_8bf98b987aa3482f97e846178bf0b741" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1308 HAMPTON ST<br><b>Type:</b> apartment<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/27576154">https://www.airbnb.com/rooms/27576154</a> <br></div>`)[0];
+            popup_0d78998a4c91437d9f1184d305ce2c5e.setContent(html_8bf98b987aa3482f97e846178bf0b741);
+        
+
+        marker_29505c4214a145ec855b74a9eefa9c75.bindPopup(popup_0d78998a4c91437d9f1184d305ce2c5e)
+        ;
+
+        
+    
+    
+            var marker_05602980ef654210ba70207a4b968bc0 = L.marker(
+                [38.02499852159739, -78.47511642073924],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_fb815486e1474c7aa72fe54a0105f17d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bed", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_05602980ef654210ba70207a4b968bc0.setIcon(icon_fb815486e1474c7aa72fe54a0105f17d);
+        
+    
+        var popup_42754da242ae4ae4a230fbb2465a70c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_add23159bf3542a9a5de3487ead5eb2c = $(`<div id="html_add23159bf3542a9a5de3487ead5eb2c" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 227 DOUGLAS AVE<br><b>Type:</b> apartment<br><b>Guest Capacity:</b> 3<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/22626013">https://www.airbnb.com/rooms/22626013</a> <br></div>`)[0];
+            popup_42754da242ae4ae4a230fbb2465a70c0.setContent(html_add23159bf3542a9a5de3487ead5eb2c);
+        
+
+        marker_05602980ef654210ba70207a4b968bc0.bindPopup(popup_42754da242ae4ae4a230fbb2465a70c0)
+        ;
+
+        
+    
+    
+            var marker_a31c73774cd640dcac2122c6a2bcbd15 = L.marker(
+                [38.0314109722666, -78.48240080363762],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_c57ba9ddaa1c43018d6b25fce0367490 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_a31c73774cd640dcac2122c6a2bcbd15.setIcon(icon_c57ba9ddaa1c43018d6b25fce0367490);
+        
+    
+        var popup_ddbc0f77615b4755a76c89fbfdadfc19 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ebab74cbf1a4f87ad39b90b80571815 = $(`<div id="html_4ebab74cbf1a4f87ad39b90b80571815" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 211 W MAIN ST<br><b>Type:</b> hotel<br><b>Guest Capacity:</b> 2<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/13058556">https://www.airbnb.com/rooms/13058556</a> <br></div>`)[0];
+            popup_ddbc0f77615b4755a76c89fbfdadfc19.setContent(html_4ebab74cbf1a4f87ad39b90b80571815);
+        
+
+        marker_a31c73774cd640dcac2122c6a2bcbd15.bindPopup(popup_ddbc0f77615b4755a76c89fbfdadfc19)
+        ;
+
+        
+    
+    
+            var marker_0efcf032d45d4a9cb1145b5bd8fabf6b = L.marker(
+                [38.02565717768946, -78.48009699674087],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_bdac8ed0f2194881825fe93ae8fe1df6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_0efcf032d45d4a9cb1145b5bd8fabf6b.setIcon(icon_bdac8ed0f2194881825fe93ae8fe1df6);
+        
+    
+        var popup_c84f18545d8c4cdb8414cd2a75afc194 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ceda1bc92c8c4d1aa70d5496d285f43f = $(`<div id="html_ceda1bc92c8c4d1aa70d5496d285f43f" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 604 BELMONT AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/9704469">https://www.airbnb.com/rooms/9704469</a> <br></div>`)[0];
+            popup_c84f18545d8c4cdb8414cd2a75afc194.setContent(html_ceda1bc92c8c4d1aa70d5496d285f43f);
+        
+
+        marker_0efcf032d45d4a9cb1145b5bd8fabf6b.bindPopup(popup_c84f18545d8c4cdb8414cd2a75afc194)
+        ;
+
+        
+    
+    
+            var marker_ba7b0287570047879b1137d4b80d5b4e = L.marker(
+                [38.024097279611496, -78.47561895520963],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_d6a23c3f94d3476c89d6bccef161a128 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_ba7b0287570047879b1137d4b80d5b4e.setIcon(icon_d6a23c3f94d3476c89d6bccef161a128);
+        
+    
+        var popup_bc368afa110d4581a6bb4e53438fa706 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8d98246b7984d319c6e1d2ca8e4ab65 = $(`<div id="html_a8d98246b7984d319c6e1d2ca8e4ab65" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 829 BELMONT AVE<br><b>Type:</b> hotel<br><b>Guest Capacity:</b> 2<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/35616987">https://www.airbnb.com/rooms/35616987</a> <br></div>`)[0];
+            popup_bc368afa110d4581a6bb4e53438fa706.setContent(html_a8d98246b7984d319c6e1d2ca8e4ab65);
+        
+
+        marker_ba7b0287570047879b1137d4b80d5b4e.bindPopup(popup_bc368afa110d4581a6bb4e53438fa706)
+        ;
+
+        
+    
+    
+            var marker_ad3aed0e220b47a0a401ace34723791b = L.marker(
+                [38.024097279611496, -78.47561895520963],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_6a1b85c4c00c4903a5d2da94f10c3866 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_ad3aed0e220b47a0a401ace34723791b.setIcon(icon_6a1b85c4c00c4903a5d2da94f10c3866);
+        
+    
+        var popup_996c5fbf6f3d42988fc61b88ad990c36 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3095dec3c6fa4739884c2d32387583a7 = $(`<div id="html_3095dec3c6fa4739884c2d32387583a7" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 829 BELMONT AVE<br><b>Type:</b> hotel<br><b>Guest Capacity:</b> 2<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/37714020">https://www.airbnb.com/rooms/37714020</a> <br></div>`)[0];
+            popup_996c5fbf6f3d42988fc61b88ad990c36.setContent(html_3095dec3c6fa4739884c2d32387583a7);
+        
+
+        marker_ad3aed0e220b47a0a401ace34723791b.bindPopup(popup_996c5fbf6f3d42988fc61b88ad990c36)
+        ;
+
+        
+    
+    
+            var marker_ba6e7bc2bbb444fb9564c4bd519a820c = L.marker(
+                [38.024097279611496, -78.47561895520963],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_d67fefac95694d8a845a286cd7eba780 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_ba6e7bc2bbb444fb9564c4bd519a820c.setIcon(icon_d67fefac95694d8a845a286cd7eba780);
+        
+    
+        var popup_832776df15574ffb8a07b2a40ecf2345 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c48921e9651141afa9f9759f20759775 = $(`<div id="html_c48921e9651141afa9f9759f20759775" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 829 BELMONT AVE<br><b>Type:</b> hotel<br><b>Guest Capacity:</b> 2<br><b>Link:</b> <a href=" https://www.airbnb.com/rooms/35616690"> https://www.airbnb.com/rooms/35616690</a> <br></div>`)[0];
+            popup_832776df15574ffb8a07b2a40ecf2345.setContent(html_c48921e9651141afa9f9759f20759775);
+        
+
+        marker_ba6e7bc2bbb444fb9564c4bd519a820c.bindPopup(popup_832776df15574ffb8a07b2a40ecf2345)
+        ;
+
+        
+    
+    
+            var marker_0eabd95a09034595b738331c46e7c9eb = L.marker(
+                [38.02326160020512, -78.47962984058927],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_1e23f2413cf848e3b666dc15dcfc6bd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0eabd95a09034595b738331c46e7c9eb.setIcon(icon_1e23f2413cf848e3b666dc15dcfc6bd2);
+        
+    
+        var popup_bd175f535bbd4e74bdefebbcc4d252e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1d439f0ebadc4aa5942a92308e51874d = $(`<div id="html_1d439f0ebadc4aa5942a92308e51874d" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 804 AVON ST<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 8<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/45517841">https://www.airbnb.com/rooms/45517841</a> <br></div>`)[0];
+            popup_bd175f535bbd4e74bdefebbcc4d252e2.setContent(html_1d439f0ebadc4aa5942a92308e51874d);
+        
+
+        marker_0eabd95a09034595b738331c46e7c9eb.bindPopup(popup_bd175f535bbd4e74bdefebbcc4d252e2)
+        ;
+
+        
+    
+    
+            var marker_976b3ca296434d6f8dafb52170f524ed = L.marker(
+                [38.03153305456829, -78.48963363414485],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_ce20163914014ca7868f2c163f975e60 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bed", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_976b3ca296434d6f8dafb52170f524ed.setIcon(icon_ce20163914014ca7868f2c163f975e60);
+        
+    
+        var popup_19a076328e78477e894062436f90e698 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d27329b1c6dc479a95dc996568de3bdb = $(`<div id="html_d27329b1c6dc479a95dc996568de3bdb" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 635 W MAIN ST<br><b>Type:</b> apartment<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/35287055">https://www.airbnb.com/rooms/35287055</a> <br></div>`)[0];
+            popup_19a076328e78477e894062436f90e698.setContent(html_d27329b1c6dc479a95dc996568de3bdb);
+        
+
+        marker_976b3ca296434d6f8dafb52170f524ed.bindPopup(popup_19a076328e78477e894062436f90e698)
+        ;
+
+        
+    
+    
+            var marker_87db58cf95cf45e4a9a3ee509ce356f2 = L.marker(
+                [38.01725807514165, -78.50107661855692],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_91a2ce4e8291438aab06b855e0041523 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bed", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_87db58cf95cf45e4a9a3ee509ce356f2.setIcon(icon_91a2ce4e8291438aab06b855e0041523);
+        
+    
+        var popup_842308e3f1244f5b8884cb1ecd02092f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f183054ec244f2fa02ba5de35c3bc9b = $(`<div id="html_4f183054ec244f2fa02ba5de35c3bc9b" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 824 VILLAGE RD<br><b>Type:</b> apartment<br><b>Guest Capacity:</b> 3<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/18601797">https://www.airbnb.com/rooms/18601797</a> <br></div>`)[0];
+            popup_842308e3f1244f5b8884cb1ecd02092f.setContent(html_4f183054ec244f2fa02ba5de35c3bc9b);
+        
+
+        marker_87db58cf95cf45e4a9a3ee509ce356f2.bindPopup(popup_842308e3f1244f5b8884cb1ecd02092f)
+        ;
+
+        
+    
+    
+            var marker_ea0f72f9ded54abb9a4dd3e508dd5130 = L.marker(
+                [38.02660912584227, -78.47343461827896],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_f2772a241c83468fa7bbdf6d8f33d633 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bed", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_ea0f72f9ded54abb9a4dd3e508dd5130.setIcon(icon_f2772a241c83468fa7bbdf6d8f33d633);
+        
+    
+        var popup_12ee4b4727e548c8808373f05f4be642 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1f13f8428dbd424aa697a719ed19196b = $(`<div id="html_1f13f8428dbd424aa697a719ed19196b" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 204 DOUGLAS AVE<br><b>Type:</b> apartment<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/24451050">https://www.airbnb.com/rooms/24451050</a> <br></div>`)[0];
+            popup_12ee4b4727e548c8808373f05f4be642.setContent(html_1f13f8428dbd424aa697a719ed19196b);
+        
+
+        marker_ea0f72f9ded54abb9a4dd3e508dd5130.bindPopup(popup_12ee4b4727e548c8808373f05f4be642)
+        ;
+
+        
+    
+    
+            var marker_72e6b712c69e4641a2e1a7f8acebb42a = L.marker(
+                [38.03725632633336, -78.4592494666657],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_7a998041fd72417d87f749cfd28f9e6d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bed", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_72e6b712c69e4641a2e1a7f8acebb42a.setIcon(icon_7a998041fd72417d87f749cfd28f9e6d);
+        
+    
+        var popup_c1de255d466542e09e50716aac152707 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3e9044107724efdbf3ddbc917323dbb = $(`<div id="html_f3e9044107724efdbf3ddbc917323dbb" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1304 BELLEVIEW AVE<br><b>Type:</b> apartment<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/37213769">https://www.airbnb.com/rooms/37213769</a> <br></div>`)[0];
+            popup_c1de255d466542e09e50716aac152707.setContent(html_f3e9044107724efdbf3ddbc917323dbb);
+        
+
+        marker_72e6b712c69e4641a2e1a7f8acebb42a.bindPopup(popup_c1de255d466542e09e50716aac152707)
+        ;
+
+        
+    
+    
+            var marker_8522e4788c1a4606b4f433a4dd3be9ce = L.marker(
+                [38.02330433916423, -78.47208312705193],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_83a581ae0a0c4561ae60129f7f33f16d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bed", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_8522e4788c1a4606b4f433a4dd3be9ce.setIcon(icon_83a581ae0a0c4561ae60129f7f33f16d);
+        
+    
+        var popup_4257d83e224248c992138b4c782725de = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e6f02eea15124660be32b4c25e0ee818 = $(`<div id="html_e6f02eea15124660be32b4c25e0ee818" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1100 LEONARD ST<br><b>Type:</b> apartment<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/3997007">https://www.airbnb.com/rooms/3997007</a> <br></div>`)[0];
+            popup_4257d83e224248c992138b4c782725de.setContent(html_e6f02eea15124660be32b4c25e0ee818);
+        
+
+        marker_8522e4788c1a4606b4f433a4dd3be9ce.bindPopup(popup_4257d83e224248c992138b4c782725de)
+        ;
+
+        
+    
+    
+            var marker_9b516110de1d4a6f86b1f1255d338760 = L.marker(
+                [38.0314109722666, -78.48240080363762],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_9f9dd2dbdb0c4878a61bcef2e520b5c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_9b516110de1d4a6f86b1f1255d338760.setIcon(icon_9f9dd2dbdb0c4878a61bcef2e520b5c7);
+        
+    
+        var popup_f2f7e77890964513ad1046c62097cc17 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b847c4c078fd4c16b2e162e41b12f26b = $(`<div id="html_b847c4c078fd4c16b2e162e41b12f26b" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 211 W MAIN ST<br><b>Type:</b> hotel<br><b>Guest Capacity:</b> 2<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/13058472">https://www.airbnb.com/rooms/13058472</a> <br></div>`)[0];
+            popup_f2f7e77890964513ad1046c62097cc17.setContent(html_b847c4c078fd4c16b2e162e41b12f26b);
+        
+
+        marker_9b516110de1d4a6f86b1f1255d338760.bindPopup(popup_f2f7e77890964513ad1046c62097cc17)
+        ;
+
+        
+    
+    
+            var marker_9b8de845a44c44568e43395095bc91de = L.marker(
+                [38.03025969597553, -78.48136607633327],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_2398681c8e2b452187b4b24680dc5979 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_9b8de845a44c44568e43395095bc91de.setIcon(icon_2398681c8e2b452187b4b24680dc5979);
+        
+    
+        var popup_6e05d1dca27b4806bad8ec2dbcdc3d8b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2909bad243da49b5a17b7c8777f9e8be = $(`<div id="html_2909bad243da49b5a17b7c8777f9e8be" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 110-112 E MAIN ST<br><b>Type:</b> hotel<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/42131616">https://www.airbnb.com/rooms/42131616</a> <br></div>`)[0];
+            popup_6e05d1dca27b4806bad8ec2dbcdc3d8b.setContent(html_2909bad243da49b5a17b7c8777f9e8be);
+        
+
+        marker_9b8de845a44c44568e43395095bc91de.bindPopup(popup_6e05d1dca27b4806bad8ec2dbcdc3d8b)
+        ;
+
+        
+    
+    
+            var marker_dc31b280e64d411394351b6fa6143dc0 = L.marker(
+                [38.0314109722666, -78.48240080363762],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_aba26622ec1f4b498d795c612654baf0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_dc31b280e64d411394351b6fa6143dc0.setIcon(icon_aba26622ec1f4b498d795c612654baf0);
+        
+    
+        var popup_8a1c9fcaae094b9ab1f1735be48593c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a342097580e240b2bd6688650b04f29d = $(`<div id="html_a342097580e240b2bd6688650b04f29d" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 211 W MAIN ST<br><b>Type:</b> hotel<br><b>Guest Capacity:</b> 2<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/13058593">https://www.airbnb.com/rooms/13058593</a> <br></div>`)[0];
+            popup_8a1c9fcaae094b9ab1f1735be48593c7.setContent(html_a342097580e240b2bd6688650b04f29d);
+        
+
+        marker_dc31b280e64d411394351b6fa6143dc0.bindPopup(popup_8a1c9fcaae094b9ab1f1735be48593c7)
+        ;
+
+        
+    
+    
+            var marker_c519db7086104659b41917e7253471f6 = L.marker(
+                [38.0314109722666, -78.48240080363762],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_6012164158e548aa86ca390892c49235 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_c519db7086104659b41917e7253471f6.setIcon(icon_6012164158e548aa86ca390892c49235);
+        
+    
+        var popup_ee12ebe1aa4c4320a958304575bb5369 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb653b51024049c1b3432d7ab70d4d7f = $(`<div id="html_bb653b51024049c1b3432d7ab70d4d7f" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 211 W MAIN ST<br><b>Type:</b> hotel<br><b>Guest Capacity:</b> 2<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/13058517">https://www.airbnb.com/rooms/13058517</a> <br></div>`)[0];
+            popup_ee12ebe1aa4c4320a958304575bb5369.setContent(html_bb653b51024049c1b3432d7ab70d4d7f);
+        
+
+        marker_c519db7086104659b41917e7253471f6.bindPopup(popup_ee12ebe1aa4c4320a958304575bb5369)
+        ;
+
+        
+    
+    
+            var marker_fd98ee38d76247cd98be1e7926b03a46 = L.marker(
+                [38.03587155884702, -78.49005472750243],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_b6e0073bb6d8434abfcec71ec93bef0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "key", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_fd98ee38d76247cd98be1e7926b03a46.setIcon(icon_b6e0073bb6d8434abfcec71ec93bef0d);
+        
+    
+        var popup_a9ccc799d493436c8f371d60543c2c92 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f07b1e6952cb47308df09c6782e5e504 = $(`<div id="html_f07b1e6952cb47308df09c6782e5e504" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 420 9TH ST NW<br><b>Type:</b> guesthouse<br><b>Guest Capacity:</b> 2<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/11094566">https://www.airbnb.com/rooms/11094566</a> <br></div>`)[0];
+            popup_a9ccc799d493436c8f371d60543c2c92.setContent(html_f07b1e6952cb47308df09c6782e5e504);
+        
+
+        marker_fd98ee38d76247cd98be1e7926b03a46.bindPopup(popup_a9ccc799d493436c8f371d60543c2c92)
+        ;
+
+        
+    
+    
+            var marker_7a59bcddc5024907baa21b1be7c56f58 = L.marker(
+                [38.02070673061463, -78.47314899092079],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_b36e052ff2fd49c6a22cdc349d0b3020 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bed", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_7a59bcddc5024907baa21b1be7c56f58.setIcon(icon_b36e052ff2fd49c6a22cdc349d0b3020);
+        
+    
+        var popup_24c7edd46ac842ddadbcc035415d79be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_416b349671ec477796c0b8eebe4fe3b7 = $(`<div id="html_416b349671ec477796c0b8eebe4fe3b7" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1215 MONTICELLO RD<br><b>Type:</b> apartment<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/45864810">https://www.airbnb.com/rooms/45864810</a> <br></div>`)[0];
+            popup_24c7edd46ac842ddadbcc035415d79be.setContent(html_416b349671ec477796c0b8eebe4fe3b7);
+        
+
+        marker_7a59bcddc5024907baa21b1be7c56f58.bindPopup(popup_24c7edd46ac842ddadbcc035415d79be)
+        ;
+
+        
+    
+    
+            var marker_65354f2913e0446a84f8afde4ccd0b7d = L.marker(
+                [38.02070673061463, -78.47314899092079],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_3e90b0ddbdeb41c68ae9ba1f0276ba45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bed", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_65354f2913e0446a84f8afde4ccd0b7d.setIcon(icon_3e90b0ddbdeb41c68ae9ba1f0276ba45);
+        
+    
+        var popup_fb267161c2674ef583c8fbc14f5ab869 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_87d733a05bb24495b76f672a3ce41d7a = $(`<div id="html_87d733a05bb24495b76f672a3ce41d7a" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1215 MONTICELLO RD<br><b>Type:</b> apartment<br><b>Guest Capacity:</b> 5<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/5352948">https://www.airbnb.com/rooms/5352948</a> <br></div>`)[0];
+            popup_fb267161c2674ef583c8fbc14f5ab869.setContent(html_87d733a05bb24495b76f672a3ce41d7a);
+        
+
+        marker_65354f2913e0446a84f8afde4ccd0b7d.bindPopup(popup_fb267161c2674ef583c8fbc14f5ab869)
+        ;
+
+        
+    
+    
+            var marker_da8fcc75d1c548dd8ce5077cb9dd67b3 = L.marker(
+                [38.02606846035213, -78.46566263591303],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_e64982003c64429d8db8a3463a250c4d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_da8fcc75d1c548dd8ce5077cb9dd67b3.setIcon(icon_e64982003c64429d8db8a3463a250c4d);
+        
+    
+        var popup_77dd9bb26f35435f8b9bd9ed9d1d463f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6223fd69899a4a1db494b51d64316194 = $(`<div id="html_6223fd69899a4a1db494b51d64316194" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1319 E MARKET ST<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/25031828">https://www.airbnb.com/rooms/25031828</a> <br></div>`)[0];
+            popup_77dd9bb26f35435f8b9bd9ed9d1d463f.setContent(html_6223fd69899a4a1db494b51d64316194);
+        
+
+        marker_da8fcc75d1c548dd8ce5077cb9dd67b3.bindPopup(popup_77dd9bb26f35435f8b9bd9ed9d1d463f)
+        ;
+
+        
+    
+    
+            var marker_1a97014e3aef4676b709b87de88d599e = L.marker(
+                [38.03025969597553, -78.48136607633327],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_5adfe2a3760641a8baaeca0518fc702f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_1a97014e3aef4676b709b87de88d599e.setIcon(icon_5adfe2a3760641a8baaeca0518fc702f);
+        
+    
+        var popup_79a4899df73c4b3a9bf4b99933e503e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fb0563e7b6f74b53b61e0be59a621892 = $(`<div id="html_fb0563e7b6f74b53b61e0be59a621892" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 110-112 E MAIN ST<br><b>Type:</b> hotel<br><b>Guest Capacity:</b> 2<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/42252665">https://www.airbnb.com/rooms/42252665</a> <br></div>`)[0];
+            popup_79a4899df73c4b3a9bf4b99933e503e0.setContent(html_fb0563e7b6f74b53b61e0be59a621892);
+        
+
+        marker_1a97014e3aef4676b709b87de88d599e.bindPopup(popup_79a4899df73c4b3a9bf4b99933e503e0)
+        ;
+
+        
+    
+    
+            var marker_fdc337559ff74239be647559b31f9d1d = L.marker(
+                [38.02307035273822, -78.4616069309433],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_170769891313482886f7f4147228cbe8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bed", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_fdc337559ff74239be647559b31f9d1d.setIcon(icon_170769891313482886f7f4147228cbe8);
+        
+    
+        var popup_329c79f144a14f13a4c825ea1387ecf6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6453b8592d6e49f9a3b73fe757c49ad7 = $(`<div id="html_6453b8592d6e49f9a3b73fe757c49ad7" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 124 FRANKLIN ST<br><b>Type:</b> apartment<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/44012710">https://www.airbnb.com/rooms/44012710</a> <br></div>`)[0];
+            popup_329c79f144a14f13a4c825ea1387ecf6.setContent(html_6453b8592d6e49f9a3b73fe757c49ad7);
+        
+
+        marker_fdc337559ff74239be647559b31f9d1d.bindPopup(popup_329c79f144a14f13a4c825ea1387ecf6)
+        ;
+
+        
+    
+    
+            var marker_f0e83b4821294ab4ac88027c13879391 = L.marker(
+                [38.018182261148446, -78.48075255706762],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_79200c0ddf4d45f89ab9cb4f5f717999 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_f0e83b4821294ab4ac88027c13879391.setIcon(icon_79200c0ddf4d45f89ab9cb4f5f717999);
+        
+    
+        var popup_11b09d673ed041c8a33fec0481acfceb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c78a94d03eb45b2a56a6221bb400af1 = $(`<div id="html_1c78a94d03eb45b2a56a6221bb400af1" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 805 STONEHENGE AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 5<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/914564">https://www.airbnb.com/rooms/914564</a> <br></div>`)[0];
+            popup_11b09d673ed041c8a33fec0481acfceb.setContent(html_1c78a94d03eb45b2a56a6221bb400af1);
+        
+
+        marker_f0e83b4821294ab4ac88027c13879391.bindPopup(popup_11b09d673ed041c8a33fec0481acfceb)
+        ;
+
+        
+    
+    
+            var marker_a98f13394ba149b59f82894c26e05d0d = L.marker(
+                [38.02730414660943, -78.47662943335436],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_7a4a234af8974c20be81ada92c1f8e3e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a98f13394ba149b59f82894c26e05d0d.setIcon(icon_7a4a234af8974c20be81ada92c1f8e3e);
+        
+    
+        var popup_c9cd7fd18f3640e3b82f0726231e3b5f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a24e30f183a4891a4f0e52954a8cb68 = $(`<div id="html_7a24e30f183a4891a4f0e52954a8cb68" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 703 GRAVES ST<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 7<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/9127813">https://www.airbnb.com/rooms/9127813</a> <br></div>`)[0];
+            popup_c9cd7fd18f3640e3b82f0726231e3b5f.setContent(html_7a24e30f183a4891a4f0e52954a8cb68);
+        
+
+        marker_a98f13394ba149b59f82894c26e05d0d.bindPopup(popup_c9cd7fd18f3640e3b82f0726231e3b5f)
+        ;
+
+        
+    
+    
+            var marker_173ce2e16bdb42c5b239c2f1c9870831 = L.marker(
+                [38.03093364567916, -78.48120148953495],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_0f212ecb45714425be7f76c2902e6601 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bed", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_173ce2e16bdb42c5b239c2f1c9870831.setIcon(icon_0f212ecb45714425be7f76c2902e6601);
+        
+    
+        var popup_c5595b7939c24f02a521d7829ab1d4fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e9c1586f77744a8a866a60672d61282f = $(`<div id="html_e9c1586f77744a8a866a60672d61282f" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 101-111 E MAIN ST<br><b>Type:</b> apartment<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/9129775">https://www.airbnb.com/rooms/9129775</a> <br></div>`)[0];
+            popup_c5595b7939c24f02a521d7829ab1d4fe.setContent(html_e9c1586f77744a8a866a60672d61282f);
+        
+
+        marker_173ce2e16bdb42c5b239c2f1c9870831.bindPopup(popup_c5595b7939c24f02a521d7829ab1d4fe)
+        ;
+
+        
+    
+    
+            var marker_3d5c65a7bc7d45be80749b06f15b4a79 = L.marker(
+                [38.029681663598424, -78.46415610229651],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_6c2bac6eef614b08ae1434e3b8c81f2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_3d5c65a7bc7d45be80749b06f15b4a79.setIcon(icon_6c2bac6eef614b08ae1434e3b8c81f2f);
+        
+    
+        var popup_c1c451b9709b449bb3a4cbaed43d38b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9133227d1850473d8b80e1e193ab0b7a = $(`<div id="html_9133227d1850473d8b80e1e193ab0b7a" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 437 FAIRWAY AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 5<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/22606">https://www.airbnb.com/rooms/22606</a> <br></div>`)[0];
+            popup_c1c451b9709b449bb3a4cbaed43d38b3.setContent(html_9133227d1850473d8b80e1e193ab0b7a);
+        
+
+        marker_3d5c65a7bc7d45be80749b06f15b4a79.bindPopup(popup_c1c451b9709b449bb3a4cbaed43d38b3)
+        ;
+
+        
+    
+    
+            var marker_06ce67c083c241c3b95a1f6f960b4d5b = L.marker(
+                [38.04789112249394, -78.48151429042028],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_3a1e6537082c4afba7333ecc47e0a3ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_06ce67c083c241c3b95a1f6f960b4d5b.setIcon(icon_3a1e6537082c4afba7333ecc47e0a3ac);
+        
+    
+        var popup_f9b0c89ad8e844ad88f59f01e1573d83 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0d4912fb8234771a42befb40e673f36 = $(`<div id="html_c0d4912fb8234771a42befb40e673f36" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1443 PLYMOUTH RD<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 10<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/42569325">https://www.airbnb.com/rooms/42569325</a> <br></div>`)[0];
+            popup_f9b0c89ad8e844ad88f59f01e1573d83.setContent(html_c0d4912fb8234771a42befb40e673f36);
+        
+
+        marker_06ce67c083c241c3b95a1f6f960b4d5b.bindPopup(popup_f9b0c89ad8e844ad88f59f01e1573d83)
+        ;
+
+        
+    
+    
+            var marker_b8d140436aa249ff89bc84fa3a7bddbe = L.marker(
+                [38.027016278443384, -78.4749779132091],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_2db5ccb4a3444148b4324477b45d33f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_b8d140436aa249ff89bc84fa3a7bddbe.setIcon(icon_2db5ccb4a3444148b4324477b45d33f8);
+        
+    
+        var popup_7a5bcf5d61354c9088242e3ede041785 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7172d31b2ab24a438697ef59b745b6b4 = $(`<div id="html_7172d31b2ab24a438697ef59b745b6b4" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 742 GRAVES ST<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 6<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/26560609">https://www.airbnb.com/rooms/26560609</a> <br></div>`)[0];
+            popup_7a5bcf5d61354c9088242e3ede041785.setContent(html_7172d31b2ab24a438697ef59b745b6b4);
+        
+
+        marker_b8d140436aa249ff89bc84fa3a7bddbe.bindPopup(popup_7a5bcf5d61354c9088242e3ede041785)
+        ;
+
+        
+    
+    
+            var marker_1dc3a2c466344ae182f277a92eddb809 = L.marker(
+                [38.03025969597553, -78.48136607633327],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_813051bc1d7a4f1d933ebcad5b1c3331 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_1dc3a2c466344ae182f277a92eddb809.setIcon(icon_813051bc1d7a4f1d933ebcad5b1c3331);
+        
+    
+        var popup_439fb88d4719489eaf5a2697e3a62013 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0888e3fb03ec48b08e0cb42744ad335d = $(`<div id="html_0888e3fb03ec48b08e0cb42744ad335d" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 110-112 E MAIN ST<br><b>Type:</b> hotel<br><b>Guest Capacity:</b> 2<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/42251052">https://www.airbnb.com/rooms/42251052</a> <br></div>`)[0];
+            popup_439fb88d4719489eaf5a2697e3a62013.setContent(html_0888e3fb03ec48b08e0cb42744ad335d);
+        
+
+        marker_1dc3a2c466344ae182f277a92eddb809.bindPopup(popup_439fb88d4719489eaf5a2697e3a62013)
+        ;
+
+        
+    
+    
+            var marker_9664c20960cc4587b0ff82e31017677f = L.marker(
+                [38.02614951433283, -78.4539752519173],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_332b2739d04c41b585736e778b12a47d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9664c20960cc4587b0ff82e31017677f.setIcon(icon_332b2739d04c41b585736e778b12a47d);
+        
+    
+        var popup_bed03225560446c78a009501459e1a3a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d41d80ac5e584468a70dfaff88d622ec = $(`<div id="html_d41d80ac5e584468a70dfaff88d622ec" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 350 RIVERSIDE AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 7<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/46090884">https://www.airbnb.com/rooms/46090884</a> <br></div>`)[0];
+            popup_bed03225560446c78a009501459e1a3a.setContent(html_d41d80ac5e584468a70dfaff88d622ec);
+        
+
+        marker_9664c20960cc4587b0ff82e31017677f.bindPopup(popup_bed03225560446c78a009501459e1a3a)
+        ;
+
+        
+    
+    
+            var marker_1db7dfd04a8a446492edf83842f8038c = L.marker(
+                [38.01815893409821, -78.49321197956411],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_6d1df0d7ebcb4c8ba07edff12f96519a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1db7dfd04a8a446492edf83842f8038c.setIcon(icon_6d1df0d7ebcb4c8ba07edff12f96519a);
+        
+    
+        var popup_b52e9149a7924df886efd4fb078eba6c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_13ac739bb7c14956ab1c6d470cacf6d7 = $(`<div id="html_13ac739bb7c14956ab1c6d470cacf6d7" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 913 RAYMOND RD<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 12<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/11926883">https://www.airbnb.com/rooms/11926883</a> <br></div>`)[0];
+            popup_b52e9149a7924df886efd4fb078eba6c.setContent(html_13ac739bb7c14956ab1c6d470cacf6d7);
+        
+
+        marker_1db7dfd04a8a446492edf83842f8038c.bindPopup(popup_b52e9149a7924df886efd4fb078eba6c)
+        ;
+
+        
+    
+    
+            var marker_a9a60177167f447c8354e3b3290c2947 = L.marker(
+                [38.03025969597553, -78.48136607633327],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_1dae60a7331a48ac82ece85cf3f7a040 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_a9a60177167f447c8354e3b3290c2947.setIcon(icon_1dae60a7331a48ac82ece85cf3f7a040);
+        
+    
+        var popup_788ff68e73644ea89695c7b30cec1f27 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e74b4984581460e8406a0464203643e = $(`<div id="html_1e74b4984581460e8406a0464203643e" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 110-112 E MAIN ST<br><b>Type:</b> hotel<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/42245308">https://www.airbnb.com/rooms/42245308</a> <br></div>`)[0];
+            popup_788ff68e73644ea89695c7b30cec1f27.setContent(html_1e74b4984581460e8406a0464203643e);
+        
+
+        marker_a9a60177167f447c8354e3b3290c2947.bindPopup(popup_788ff68e73644ea89695c7b30cec1f27)
+        ;
+
+        
+    
+    
+            var marker_c93767bb2a364fd6be353107bb63f888 = L.marker(
+                [38.03025969597553, -78.48136607633327],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_ac5856fd2c304ed0bba277cd639a1cde = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_c93767bb2a364fd6be353107bb63f888.setIcon(icon_ac5856fd2c304ed0bba277cd639a1cde);
+        
+    
+        var popup_bae50795a8374d8b8cad2d45f0ea2300 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a01d09255c446119d4b8e84979de239 = $(`<div id="html_7a01d09255c446119d4b8e84979de239" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 110-112 E MAIN ST<br><b>Type:</b> hotel<br><b>Guest Capacity:</b> 2<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/42252428">https://www.airbnb.com/rooms/42252428</a> <br></div>`)[0];
+            popup_bae50795a8374d8b8cad2d45f0ea2300.setContent(html_7a01d09255c446119d4b8e84979de239);
+        
+
+        marker_c93767bb2a364fd6be353107bb63f888.bindPopup(popup_bae50795a8374d8b8cad2d45f0ea2300)
+        ;
+
+        
+    
+    
+            var marker_44c8953b9c3147258a827d9ec118a9ba = L.marker(
+                [38.03025969597553, -78.48136607633327],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_3fd1efe87f9442be91bb6188ffac3021 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_44c8953b9c3147258a827d9ec118a9ba.setIcon(icon_3fd1efe87f9442be91bb6188ffac3021);
+        
+    
+        var popup_af4582554ccc4a12b80fed71fc7783b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_69c5575c047244308a71261fb1755933 = $(`<div id="html_69c5575c047244308a71261fb1755933" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 110-112 E MAIN ST<br><b>Type:</b> hotel<br><b>Guest Capacity:</b> 3<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/42246378">https://www.airbnb.com/rooms/42246378</a> <br></div>`)[0];
+            popup_af4582554ccc4a12b80fed71fc7783b8.setContent(html_69c5575c047244308a71261fb1755933);
+        
+
+        marker_44c8953b9c3147258a827d9ec118a9ba.bindPopup(popup_af4582554ccc4a12b80fed71fc7783b8)
+        ;
+
+        
+    
+    
+            var marker_a4eb83adbdbd43e6a62d0e5ff8d7004b = L.marker(
+                [38.033951647739, -78.47737559645131],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_3ba1728e9ff7407da91763d7d5cefaf3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_a4eb83adbdbd43e6a62d0e5ff8d7004b.setIcon(icon_3ba1728e9ff7407da91763d7d5cefaf3);
+        
+    
+        var popup_c5c503bebcfb4ec0866ae256735f61e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_192b0478583c44d58284278d9e8f9c5c = $(`<div id="html_192b0478583c44d58284278d9e8f9c5c" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 401 HEDGE ST<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 6<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/919860">https://www.airbnb.com/rooms/919860</a> <br></div>`)[0];
+            popup_c5c503bebcfb4ec0866ae256735f61e0.setContent(html_192b0478583c44d58284278d9e8f9c5c);
+        
+
+        marker_a4eb83adbdbd43e6a62d0e5ff8d7004b.bindPopup(popup_c5c503bebcfb4ec0866ae256735f61e0)
+        ;
+
+        
+    
+    
+            var marker_d10d9994c80c4e6aa2a62fc8168eaa1e = L.marker(
+                [38.03385482836267, -78.47710586680195],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_923617d1a0504aa8bd4704688d6ee016 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_d10d9994c80c4e6aa2a62fc8168eaa1e.setIcon(icon_923617d1a0504aa8bd4704688d6ee016);
+        
+    
+        var popup_a0f6c702a6da44e78dc76f929bbaa8c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7856892d926849c9b0ee78eb09e5e76f = $(`<div id="html_7856892d926849c9b0ee78eb09e5e76f" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 405 HEDGE ST<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 6<br><b>Link:</b> <a href=" https://www.airbnb.com/rooms/1382393"> https://www.airbnb.com/rooms/1382393</a> <br></div>`)[0];
+            popup_a0f6c702a6da44e78dc76f929bbaa8c5.setContent(html_7856892d926849c9b0ee78eb09e5e76f);
+        
+
+        marker_d10d9994c80c4e6aa2a62fc8168eaa1e.bindPopup(popup_a0f6c702a6da44e78dc76f929bbaa8c5)
+        ;
+
+        
+    
+    
+            var marker_d4a4fca90d88452cba74bfb98ba6e690 = L.marker(
+                [38.03025969597553, -78.48136607633327],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_bba877ad5559478db17de4b2eae32287 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_d4a4fca90d88452cba74bfb98ba6e690.setIcon(icon_bba877ad5559478db17de4b2eae32287);
+        
+    
+        var popup_0269f9175f094babb2589851e1398dc5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_338f8948336745f2a3668c0ddc406756 = $(`<div id="html_338f8948336745f2a3668c0ddc406756" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 110-112 E MAIN ST<br><b>Type:</b> hotel<br><b>Guest Capacity:</b> 2<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/42251827">https://www.airbnb.com/rooms/42251827</a> <br></div>`)[0];
+            popup_0269f9175f094babb2589851e1398dc5.setContent(html_338f8948336745f2a3668c0ddc406756);
+        
+
+        marker_d4a4fca90d88452cba74bfb98ba6e690.bindPopup(popup_0269f9175f094babb2589851e1398dc5)
+        ;
+
+        
+    
+    
+            var marker_2d309c07f3ab4f76a7c1d4e1e87fdf33 = L.marker(
+                [38.024687461166906, -78.46226455054637],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_de2c417246fa42488de4f59226f4b646 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_2d309c07f3ab4f76a7c1d4e1e87fdf33.setIcon(icon_de2c417246fa42488de4f59226f4b646);
+        
+    
+        var popup_3bee16c9eaa04b31bbeabba13198744f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e8d68fb06194295b0557fe510f0f875 = $(`<div id="html_4e8d68fb06194295b0557fe510f0f875" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1513 E MARKET ST<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/45103559">https://www.airbnb.com/rooms/45103559</a> <br></div>`)[0];
+            popup_3bee16c9eaa04b31bbeabba13198744f.setContent(html_4e8d68fb06194295b0557fe510f0f875);
+        
+
+        marker_2d309c07f3ab4f76a7c1d4e1e87fdf33.bindPopup(popup_3bee16c9eaa04b31bbeabba13198744f)
+        ;
+
+        
+    
+    
+            var marker_9203ecb6429d400bbda452960ff06f8b = L.marker(
+                [38.03025969597553, -78.48136607633327],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_80f73cf7fab74ab79e5a2df3f0a23d9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_9203ecb6429d400bbda452960ff06f8b.setIcon(icon_80f73cf7fab74ab79e5a2df3f0a23d9e);
+        
+    
+        var popup_cbd9d60f18ef4e1b85bb9c192f4c6fdf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e23222f207724a86b07f9994954fd194 = $(`<div id="html_e23222f207724a86b07f9994954fd194" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 110-112 E MAIN ST<br><b>Type:</b> hotel<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/42250924">https://www.airbnb.com/rooms/42250924</a> <br></div>`)[0];
+            popup_cbd9d60f18ef4e1b85bb9c192f4c6fdf.setContent(html_e23222f207724a86b07f9994954fd194);
+        
+
+        marker_9203ecb6429d400bbda452960ff06f8b.bindPopup(popup_cbd9d60f18ef4e1b85bb9c192f4c6fdf)
+        ;
+
+        
+    
+    
+            var marker_d398164e682f409c9902952270ed8441 = L.marker(
+                [38.033441387416225, -78.47965598377644],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_d9d32b50e3e14da9aed870e983797d66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_d398164e682f409c9902952270ed8441.setIcon(icon_d9d32b50e3e14da9aed870e983797d66);
+        
+    
+        var popup_cffca4a879b64b6cbdb137b00db58639 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1acebe38ba364b3f92c7974da903c560 = $(`<div id="html_1acebe38ba364b3f92c7974da903c560" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 409 2ND ST NE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 2<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/12125053">https://www.airbnb.com/rooms/12125053</a> <br></div>`)[0];
+            popup_cffca4a879b64b6cbdb137b00db58639.setContent(html_1acebe38ba364b3f92c7974da903c560);
+        
+
+        marker_d398164e682f409c9902952270ed8441.bindPopup(popup_cffca4a879b64b6cbdb137b00db58639)
+        ;
+
+        
+    
+    
+            var marker_1373cd204ec54d61959e4cfabe5c3f26 = L.marker(
+                [38.022464775919936, -78.49043842248513],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_1c587af16d644700b1e22faa6732d3ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_1373cd204ec54d61959e4cfabe5c3f26.setIcon(icon_1c587af16d644700b1e22faa6732d3ce);
+        
+    
+        var popup_3bb6b564a7a54b7e908389194e827a7b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b3ab11a346944048af30e653e0db442 = $(`<div id="html_5b3ab11a346944048af30e653e0db442" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 768 RIDGE ST<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 6<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/16283464">https://www.airbnb.com/rooms/16283464</a> <br></div>`)[0];
+            popup_3bb6b564a7a54b7e908389194e827a7b.setContent(html_5b3ab11a346944048af30e653e0db442);
+        
+
+        marker_1373cd204ec54d61959e4cfabe5c3f26.bindPopup(popup_3bb6b564a7a54b7e908389194e827a7b)
+        ;
+
+        
+    
+    
+            var marker_82dd9bcd88004557a6991cf677a7ca1c = L.marker(
+                [38.02954925142332, -78.47254321060937],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_ea01ec6aa0c943a0a974e89de4e73321 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_82dd9bcd88004557a6991cf677a7ca1c.setIcon(icon_ea01ec6aa0c943a0a974e89de4e73321);
+        
+    
+        var popup_d3d11d8e396d42559eec13131b34f2dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4635a6d2e6ec4aa6bd19d9804962768e = $(`<div id="html_4635a6d2e6ec4aa6bd19d9804962768e" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1004 E JEFFERSON ST<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 8<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/9129687">https://www.airbnb.com/rooms/9129687</a> <br></div>`)[0];
+            popup_d3d11d8e396d42559eec13131b34f2dd.setContent(html_4635a6d2e6ec4aa6bd19d9804962768e);
+        
+
+        marker_82dd9bcd88004557a6991cf677a7ca1c.bindPopup(popup_d3d11d8e396d42559eec13131b34f2dd)
+        ;
+
+        
+    
+    
+            var marker_b3970d73bc7541ae9d0d7675a98943b9 = L.marker(
+                [38.031321458673375, -78.47888084858695],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_1808bc138b0e49c295677c6dc1bad574 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b3970d73bc7541ae9d0d7675a98943b9.setIcon(icon_1808bc138b0e49c295677c6dc1bad574);
+        
+    
+        var popup_ed25c0ad1e3c4d48851d851eda02653b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_56263d2c56114e359695a57de5c1f02a = $(`<div id="html_56263d2c56114e359695a57de5c1f02a" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 213-215 4TH ST NE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 7<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/15911472">https://www.airbnb.com/rooms/15911472</a> <br></div>`)[0];
+            popup_ed25c0ad1e3c4d48851d851eda02653b.setContent(html_56263d2c56114e359695a57de5c1f02a);
+        
+
+        marker_b3970d73bc7541ae9d0d7675a98943b9.bindPopup(popup_ed25c0ad1e3c4d48851d851eda02653b)
+        ;
+
+        
+    
+    
+            var marker_687ccb77e9994e9daa2f7d4e815d8d5c = L.marker(
+                [38.01974727333982, -78.47312875158885],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_119eb03fd91142d7b48275b44ef9351d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_687ccb77e9994e9daa2f7d4e815d8d5c.setIcon(icon_119eb03fd91142d7b48275b44ef9351d);
+        
+    
+        var popup_1354fc3e91ca47b89cd83b77810d3856 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3f177f6fbbd4c47891eaae816101505 = $(`<div id="html_c3f177f6fbbd4c47891eaae816101505" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1115 BLENHEIM AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 8<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/18665941">https://www.airbnb.com/rooms/18665941</a> <br></div>`)[0];
+            popup_1354fc3e91ca47b89cd83b77810d3856.setContent(html_c3f177f6fbbd4c47891eaae816101505);
+        
+
+        marker_687ccb77e9994e9daa2f7d4e815d8d5c.bindPopup(popup_1354fc3e91ca47b89cd83b77810d3856)
+        ;
+
+        
+    
+    
+            var marker_4db7aa45f0254e1ea4fa25e6bfbbc784 = L.marker(
+                [38.040644622070076, -78.45933230250317],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_cfc0c99099cb458dba4b76bec0d3ce30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_4db7aa45f0254e1ea4fa25e6bfbbc784.setIcon(icon_cfc0c99099cb458dba4b76bec0d3ce30);
+        
+    
+        var popup_7ce79104c1b045daaea7f47cb7f4d52e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8dc0fbfbf5b24421b21528266bf5c3e4 = $(`<div id="html_8dc0fbfbf5b24421b21528266bf5c3e4" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1028 ST CLAIR AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 6<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/45786351">https://www.airbnb.com/rooms/45786351</a> <br></div>`)[0];
+            popup_7ce79104c1b045daaea7f47cb7f4d52e.setContent(html_8dc0fbfbf5b24421b21528266bf5c3e4);
+        
+
+        marker_4db7aa45f0254e1ea4fa25e6bfbbc784.bindPopup(popup_7ce79104c1b045daaea7f47cb7f4d52e)
+        ;
+
+        
+    
+    
+            var marker_70a66ebbac7b4abe9186bdbe8ff7ed73 = L.marker(
+                [38.0290453348418, -78.48551651276226],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_defdecdd9c514731a9495edb52ad3d51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_70a66ebbac7b4abe9186bdbe8ff7ed73.setIcon(icon_defdecdd9c514731a9495edb52ad3d51);
+        
+    
+        var popup_54a7413a780d4d178f3e40e0e239a197 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ab21f98457e4a7d964ca77db21cf2e9 = $(`<div id="html_8ab21f98457e4a7d964ca77db21cf2e9" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 214 RIDGE ST<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 14<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/22433028">https://www.airbnb.com/rooms/22433028</a> <br></div>`)[0];
+            popup_54a7413a780d4d178f3e40e0e239a197.setContent(html_8ab21f98457e4a7d964ca77db21cf2e9);
+        
+
+        marker_70a66ebbac7b4abe9186bdbe8ff7ed73.bindPopup(popup_54a7413a780d4d178f3e40e0e239a197)
+        ;
+
+        
+    
+    
+            var marker_37eb3145873a4904845ae22dbe61ec42 = L.marker(
+                [38.018338322923135, -78.47868642473294],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_7879b0b2d4464ff689005422d27e18b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_37eb3145873a4904845ae22dbe61ec42.setIcon(icon_7879b0b2d4464ff689005422d27e18b8);
+        
+    
+        var popup_8319eee444b6453c992ca09481c94186 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_74e43c343c0c4eb19b391f6f4c5f9e90 = $(`<div id="html_74e43c343c0c4eb19b391f6f4c5f9e90" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 905 DRUID AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 8<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/43849674">https://www.airbnb.com/rooms/43849674</a> <br></div>`)[0];
+            popup_8319eee444b6453c992ca09481c94186.setContent(html_74e43c343c0c4eb19b391f6f4c5f9e90);
+        
+
+        marker_37eb3145873a4904845ae22dbe61ec42.bindPopup(popup_8319eee444b6453c992ca09481c94186)
+        ;
+
+        
+    
+    
+            var marker_0a0765d8ab1e4198b2a156092698ae29 = L.marker(
+                [38.04091537293704, -78.47054036784914],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_ce0dead681fa4782a44b28ff55c3f086 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bed", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_0a0765d8ab1e4198b2a156092698ae29.setIcon(icon_ce0dead681fa4782a44b28ff55c3f086);
+        
+    
+        var popup_aba91ef96b284f30983ae4a7673443e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_940307e8e34147fc93a3dc488d64f506 = $(`<div id="html_940307e8e34147fc93a3dc488d64f506" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 603 WATSON AVE<br><b>Type:</b> apartment<br><b>Guest Capacity:</b> 6<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/43422636">https://www.airbnb.com/rooms/43422636</a> <br></div>`)[0];
+            popup_aba91ef96b284f30983ae4a7673443e8.setContent(html_940307e8e34147fc93a3dc488d64f506);
+        
+
+        marker_0a0765d8ab1e4198b2a156092698ae29.bindPopup(popup_aba91ef96b284f30983ae4a7673443e8)
+        ;
+
+        
+    
+    
+            var marker_f720079d05fe4b4ca6924a746c3e3bc6 = L.marker(
+                [38.015668088263716, -78.50015856229176],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_70ee5a02496143298ad9ea15a9322d44 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f720079d05fe4b4ca6924a746c3e3bc6.setIcon(icon_70ee5a02496143298ad9ea15a9322d44);
+        
+    
+        var popup_7ac341c2c82641c9bd8c55db8b612236 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25dbe16981304c548717529c6c8915dc = $(`<div id="html_25dbe16981304c548717529c6c8915dc" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 131 OLD FIFTH CIR<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 12<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/18021210">https://www.airbnb.com/rooms/18021210</a> <br></div>`)[0];
+            popup_7ac341c2c82641c9bd8c55db8b612236.setContent(html_25dbe16981304c548717529c6c8915dc);
+        
+
+        marker_f720079d05fe4b4ca6924a746c3e3bc6.bindPopup(popup_7ac341c2c82641c9bd8c55db8b612236)
+        ;
+
+        
+    
+    
+            var marker_f27840fad6ab427fadb53a1e05762f66 = L.marker(
+                [38.015668088263716, -78.50015856229176],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_e2cc112c93c544d2aaea942bb45295f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f27840fad6ab427fadb53a1e05762f66.setIcon(icon_e2cc112c93c544d2aaea942bb45295f8);
+        
+    
+        var popup_a01faaabbb78436c9cf325929791b78f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f290bd457d1c4735a29c013573db2ba0 = $(`<div id="html_f290bd457d1c4735a29c013573db2ba0" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 131 OLD FIFTH CIR<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 8<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/15052924">https://www.airbnb.com/rooms/15052924</a> <br></div>`)[0];
+            popup_a01faaabbb78436c9cf325929791b78f.setContent(html_f290bd457d1c4735a29c013573db2ba0);
+        
+
+        marker_f27840fad6ab427fadb53a1e05762f66.bindPopup(popup_a01faaabbb78436c9cf325929791b78f)
+        ;
+
+        
+    
+    
+            var marker_8cf6cf56154f4e4781fbb05d88246fe4 = L.marker(
+                [38.03451306082921, -78.47527850931019],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_0a39820383a945a09ff5abd48c0dd96c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8cf6cf56154f4e4781fbb05d88246fe4.setIcon(icon_0a39820383a945a09ff5abd48c0dd96c);
+        
+    
+        var popup_ec1ae3e4ca394334b46a13f9b21341d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_271cb776c85b497ba9b95912dc2abacf = $(`<div id="html_271cb776c85b497ba9b95912dc2abacf" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 534 PARK ST<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 12<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/18116955">https://www.airbnb.com/rooms/18116955</a> <br></div>`)[0];
+            popup_ec1ae3e4ca394334b46a13f9b21341d6.setContent(html_271cb776c85b497ba9b95912dc2abacf);
+        
+
+        marker_8cf6cf56154f4e4781fbb05d88246fe4.bindPopup(popup_ec1ae3e4ca394334b46a13f9b21341d6)
+        ;
+
+        
+    
+    
+            var marker_1162ac1db28d47918a74e92572bfe845 = L.marker(
+                [38.01774071463562, -78.4936588111777],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_fa233e0662e34adb9174fd81e96f12a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1162ac1db28d47918a74e92572bfe845.setIcon(icon_fa233e0662e34adb9174fd81e96f12a7);
+        
+    
+        var popup_32a77b8b29db43ff81729c8337051bf4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ca931f2b1474a7787f9d252a3828713 = $(`<div id="html_3ca931f2b1474a7787f9d252a3828713" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 194 BROOKWOOD DR<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 16<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/41058990">https://www.airbnb.com/rooms/41058990</a> <br></div>`)[0];
+            popup_32a77b8b29db43ff81729c8337051bf4.setContent(html_3ca931f2b1474a7787f9d252a3828713);
+        
+
+        marker_1162ac1db28d47918a74e92572bfe845.bindPopup(popup_32a77b8b29db43ff81729c8337051bf4)
+        ;
+
+        
+    
+    
+            var marker_78f25e4bfb82459084957946f04338c8 = L.marker(
+                [38.04379953950551, -78.49815143655798],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_2415c5668a7b4d438ac25d2df22ef831 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_78f25e4bfb82459084957946f04338c8.setIcon(icon_2415c5668a7b4d438ac25d2df22ef831);
+        
+    
+        var popup_3a620056113943aa826dff7c86d0f02a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_12dcd2667b2f4705803826608d27188e = $(`<div id="html_12dcd2667b2f4705803826608d27188e" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 803 RUGBY RD<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 10<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/29334145">https://www.airbnb.com/rooms/29334145</a> <br></div>`)[0];
+            popup_3a620056113943aa826dff7c86d0f02a.setContent(html_12dcd2667b2f4705803826608d27188e);
+        
+
+        marker_78f25e4bfb82459084957946f04338c8.bindPopup(popup_3a620056113943aa826dff7c86d0f02a)
+        ;
+
+        
+    
+    
+            var marker_1e2ad861eebe41c984699ba05714ed54 = L.marker(
+                [38.04937208368809, -78.50008546918339],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_dee81707c9284b0b82fa029f12192409 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_1e2ad861eebe41c984699ba05714ed54.setIcon(icon_dee81707c9284b0b82fa029f12192409);
+        
+    
+        var popup_44150ac03a4d4ec892a48e7771dc0208 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_54e99c468d75416b9ab0e2eda936575a = $(`<div id="html_54e99c468d75416b9ab0e2eda936575a" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1884 WESTVIEW RD<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 6<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/26948827">https://www.airbnb.com/rooms/26948827</a> <br></div>`)[0];
+            popup_44150ac03a4d4ec892a48e7771dc0208.setContent(html_54e99c468d75416b9ab0e2eda936575a);
+        
+
+        marker_1e2ad861eebe41c984699ba05714ed54.bindPopup(popup_44150ac03a4d4ec892a48e7771dc0208)
+        ;
+
+        
+    
+    
+            var marker_60b7b60359ca4bfab3f66099768f0155 = L.marker(
+                [38.026596893190714, -78.47412759655269],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_1de883d24c9645208c2dc8c086afe4ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_60b7b60359ca4bfab3f66099768f0155.setIcon(icon_1de883d24c9645208c2dc8c086afe4ba);
+        
+    
+        var popup_a2c54536f8fe4305a20bbaee8de62566 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_072f7b31f3da40ca9dad164721b08782 = $(`<div id="html_072f7b31f3da40ca9dad164721b08782" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 209 DOUGLAS AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/17546107">https://www.airbnb.com/rooms/17546107</a> <br></div>`)[0];
+            popup_a2c54536f8fe4305a20bbaee8de62566.setContent(html_072f7b31f3da40ca9dad164721b08782);
+        
+
+        marker_60b7b60359ca4bfab3f66099768f0155.bindPopup(popup_a2c54536f8fe4305a20bbaee8de62566)
+        ;
+
+        
+    
+    
+            var marker_b7ce9820f1204d4eb60753d981c82349 = L.marker(
+                [38.024353726640975, -78.46170423328319],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_eed4ebaa36ea4925af97673bc0976808 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b7ce9820f1204d4eb60753d981c82349.setIcon(icon_eed4ebaa36ea4925af97673bc0976808);
+        
+    
+        var popup_fd50cd9f52954fd780af6bdf85e7df32 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_47780f5b0957416ea96756ca353fce3a = $(`<div id="html_47780f5b0957416ea96756ca353fce3a" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1601 E MARKET ST<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 10<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/18041128">https://www.airbnb.com/rooms/18041128</a> <br></div>`)[0];
+            popup_fd50cd9f52954fd780af6bdf85e7df32.setContent(html_47780f5b0957416ea96756ca353fce3a);
+        
+
+        marker_b7ce9820f1204d4eb60753d981c82349.bindPopup(popup_fd50cd9f52954fd780af6bdf85e7df32)
+        ;
+
+        
+    
+    
+            var marker_9e91262eb78147dc9f7075b0071bc067 = L.marker(
+                [38.04494684215772, -78.50230434506977],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_5e012b23bd144f86b7f35b4fa8279557 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_9e91262eb78147dc9f7075b0071bc067.setIcon(icon_5e012b23bd144f86b7f35b4fa8279557);
+        
+    
+        var popup_b7394ee83aad416fbadfb66ce57d730b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6d8b889066cc4bbca01b4a285e4e7868 = $(`<div id="html_6d8b889066cc4bbca01b4a285e4e7868" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1859 WAYSIDE PL<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 6<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/2537050">https://www.airbnb.com/rooms/2537050</a> <br></div>`)[0];
+            popup_b7394ee83aad416fbadfb66ce57d730b.setContent(html_6d8b889066cc4bbca01b4a285e4e7868);
+        
+
+        marker_9e91262eb78147dc9f7075b0071bc067.bindPopup(popup_b7394ee83aad416fbadfb66ce57d730b)
+        ;
+
+        
+    
+    
+            var marker_e67f64e500074d32a33c57f54791752a = L.marker(
+                [38.034439857238986, -78.46895046298873],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_e90fce27f4814029b7ffa9bfde7c254e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_e67f64e500074d32a33c57f54791752a.setIcon(icon_e90fce27f4814029b7ffa9bfde7c254e);
+        
+    
+        var popup_13d5852971c045528592586b45de10c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8628fea9746e4a5bbbf49dd397f8921d = $(`<div id="html_8628fea9746e4a5bbbf49dd397f8921d" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 714 LOCUST AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 6<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/18377048">https://www.airbnb.com/rooms/18377048</a> <br></div>`)[0];
+            popup_13d5852971c045528592586b45de10c0.setContent(html_8628fea9746e4a5bbbf49dd397f8921d);
+        
+
+        marker_e67f64e500074d32a33c57f54791752a.bindPopup(popup_13d5852971c045528592586b45de10c0)
+        ;
+
+        
+    
+    
+            var marker_8e8707fd71d941ef92547c5ff0bd2b3c = L.marker(
+                [38.04188180475785, -78.46334147141197],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_5f4ccfbf940848dd9c2a04ffdbfe146b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8e8707fd71d941ef92547c5ff0bd2b3c.setIcon(icon_5f4ccfbf940848dd9c2a04ffdbfe146b);
+        
+    
+        var popup_f81d87df0ce442d2a9d9e3a9d390a966 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46e756f9e8cb4203bfeb6d939c0ad53a = $(`<div id="html_46e756f9e8cb4203bfeb6d939c0ad53a" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1014 ST CHARLES AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 10<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/25490916">https://www.airbnb.com/rooms/25490916</a> <br></div>`)[0];
+            popup_f81d87df0ce442d2a9d9e3a9d390a966.setContent(html_46e756f9e8cb4203bfeb6d939c0ad53a);
+        
+
+        marker_8e8707fd71d941ef92547c5ff0bd2b3c.bindPopup(popup_f81d87df0ce442d2a9d9e3a9d390a966)
+        ;
+
+        
+    
+    
+            var marker_3736a40e459247b3af67220d9eb161ff = L.marker(
+                [38.03093364567916, -78.48120148953495],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_16f486a6ee404ef782fa92df14eef251 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bed", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_3736a40e459247b3af67220d9eb161ff.setIcon(icon_16f486a6ee404ef782fa92df14eef251);
+        
+    
+        var popup_0f2ddd5cca09405d870e38f52deb9a3c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c429f55c991241c7abde9930e0ab41ca = $(`<div id="html_c429f55c991241c7abde9930e0ab41ca" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 101-111 E MAIN ST<br><b>Type:</b> apartment<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/7912785">https://www.airbnb.com/rooms/7912785</a> <br></div>`)[0];
+            popup_0f2ddd5cca09405d870e38f52deb9a3c.setContent(html_c429f55c991241c7abde9930e0ab41ca);
+        
+
+        marker_3736a40e459247b3af67220d9eb161ff.bindPopup(popup_0f2ddd5cca09405d870e38f52deb9a3c)
+        ;
+
+        
+    
+    
+            var marker_4b7effb7e5db4b279bbccf808d0c020c = L.marker(
+                [38.01964631931708, -78.48410610149445],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_c5a71469db8a471399a40130a25b5510 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_4b7effb7e5db4b279bbccf808d0c020c.setIcon(icon_c5a71469db8a471399a40130a25b5510);
+        
+    
+        var popup_693be473de674321837008e5d16c18f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76f5e50d83ac4c5eaba0af450778f340 = $(`<div id="html_76f5e50d83ac4c5eaba0af450778f340" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 632 STONEHENGE AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/13743664">https://www.airbnb.com/rooms/13743664</a> <br></div>`)[0];
+            popup_693be473de674321837008e5d16c18f1.setContent(html_76f5e50d83ac4c5eaba0af450778f340);
+        
+
+        marker_4b7effb7e5db4b279bbccf808d0c020c.bindPopup(popup_693be473de674321837008e5d16c18f1)
+        ;
+
+        
+    
+    
+            var marker_7c1da0592b15443789c134f9a8c29c49 = L.marker(
+                [38.02076344987327, -78.48453965851937],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_050d7365c57744bdbf0eb3ab283c6280 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_7c1da0592b15443789c134f9a8c29c49.setIcon(icon_050d7365c57744bdbf0eb3ab283c6280);
+        
+    
+        var popup_66934547665c4a4abbd9ad917b93cbb4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4fc5265be7404719894c4d8d75e4998a = $(`<div id="html_4fc5265be7404719894c4d8d75e4998a" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 508 DRUID AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 6<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/45409075">https://www.airbnb.com/rooms/45409075</a> <br></div>`)[0];
+            popup_66934547665c4a4abbd9ad917b93cbb4.setContent(html_4fc5265be7404719894c4d8d75e4998a);
+        
+
+        marker_7c1da0592b15443789c134f9a8c29c49.bindPopup(popup_66934547665c4a4abbd9ad917b93cbb4)
+        ;
+
+        
+    
+    
+            var marker_526f4a88d7e946c998a781d73815a438 = L.marker(
+                [38.01935571751472, -78.48437208564334],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_229757d724b249c184ca385a777f0acf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_526f4a88d7e946c998a781d73815a438.setIcon(icon_229757d724b249c184ca385a777f0acf);
+        
+    
+        var popup_c804a1393f9548999d05b586acbb9cca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d82f27175fe2465cadd46f87c8aca031 = $(`<div id="html_d82f27175fe2465cadd46f87c8aca031" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 602 STONEHENGE AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 6<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/36960823">https://www.airbnb.com/rooms/36960823</a> <br></div>`)[0];
+            popup_c804a1393f9548999d05b586acbb9cca.setContent(html_d82f27175fe2465cadd46f87c8aca031);
+        
+
+        marker_526f4a88d7e946c998a781d73815a438.bindPopup(popup_c804a1393f9548999d05b586acbb9cca)
+        ;
+
+        
+    
+    
+            var marker_2ed4016498b040cf959d9d0f7ee9dbdc = L.marker(
+                [38.022246235845365, -78.48093388962513],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_eebc815e40d14f9291a3748962a7de64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_2ed4016498b040cf959d9d0f7ee9dbdc.setIcon(icon_eebc815e40d14f9291a3748962a7de64);
+        
+    
+        var popup_5247a39dffa7426cab856ecd7957ce09 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15ef4c8afc2b481c96b2a122b2f29a30 = $(`<div id="html_15ef4c8afc2b481c96b2a122b2f29a30" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 919 AVON ST<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 5<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/22277818">https://www.airbnb.com/rooms/22277818</a> <br></div>`)[0];
+            popup_5247a39dffa7426cab856ecd7957ce09.setContent(html_15ef4c8afc2b481c96b2a122b2f29a30);
+        
+
+        marker_2ed4016498b040cf959d9d0f7ee9dbdc.bindPopup(popup_5247a39dffa7426cab856ecd7957ce09)
+        ;
+
+        
+    
+    
+            var marker_b868170fdff04023b502bdc9e702933f = L.marker(
+                [38.02207590248798, -78.48237144892029],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_b48504e5b3354e1ebacdc0a3f94a0b9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_b868170fdff04023b502bdc9e702933f.setIcon(icon_b48504e5b3354e1ebacdc0a3f94a0b9e);
+        
+    
+        var popup_88cf09f00bb04311bab6073cfca47eb1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8a99ac51776458590df7d6c4c25e454 = $(`<div id="html_a8a99ac51776458590df7d6c4c25e454" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 613 ELLIOTT AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 6<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/21413176">https://www.airbnb.com/rooms/21413176</a> <br></div>`)[0];
+            popup_88cf09f00bb04311bab6073cfca47eb1.setContent(html_a8a99ac51776458590df7d6c4c25e454);
+        
+
+        marker_b868170fdff04023b502bdc9e702933f.bindPopup(popup_88cf09f00bb04311bab6073cfca47eb1)
+        ;
+
+        
+    
+    
+            var marker_a91ddd52b6e8403eb05aca1dc925fd92 = L.marker(
+                [38.01429314000456, -78.47891801147397],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_fa96093f125d4a42a5f31d8e3e9f9ab3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a91ddd52b6e8403eb05aca1dc925fd92.setIcon(icon_fa96093f125d4a42a5f31d8e3e9f9ab3);
+        
+    
+        var popup_3ab69681f9564842baf04c2896ed3b30 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1fd4a3dbdb4a4b67bbbd54ae1ce40455 = $(`<div id="html_1fd4a3dbdb4a4b67bbbd54ae1ce40455" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1011 ROUGEMONT AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 12<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/21150886">https://www.airbnb.com/rooms/21150886</a> <br></div>`)[0];
+            popup_3ab69681f9564842baf04c2896ed3b30.setContent(html_1fd4a3dbdb4a4b67bbbd54ae1ce40455);
+        
+
+        marker_a91ddd52b6e8403eb05aca1dc925fd92.bindPopup(popup_3ab69681f9564842baf04c2896ed3b30)
+        ;
+
+        
+    
+    
+            var marker_ae082a1da9644b54ba299646c318e623 = L.marker(
+                [38.01306950406903, -78.48238075979764],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_f0a502b1af364ecea7f53de4930c021b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_ae082a1da9644b54ba299646c318e623.setIcon(icon_f0a502b1af364ecea7f53de4930c021b);
+        
+    
+        var popup_c61c30128b024b40a8248536b84f133a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a28f1cd18174aaa94cb4680285ba25d = $(`<div id="html_7a28f1cd18174aaa94cb4680285ba25d" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1622 MERIDIAN ST<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/19642280">https://www.airbnb.com/rooms/19642280</a> <br></div>`)[0];
+            popup_c61c30128b024b40a8248536b84f133a.setContent(html_7a28f1cd18174aaa94cb4680285ba25d);
+        
+
+        marker_ae082a1da9644b54ba299646c318e623.bindPopup(popup_c61c30128b024b40a8248536b84f133a)
+        ;
+
+        
+    
+    
+            var marker_c806224544784ed69e121a316673ea43 = L.marker(
+                [38.02428554782375, -78.4751005156025],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_dde7b285dcae481988f7c7172cdd670d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_c806224544784ed69e121a316673ea43.setIcon(icon_dde7b285dcae481988f7c7172cdd670d);
+        
+    
+        var popup_9f7bcbc111be492285d66ca7530f98c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b6826bae11cc43d2a16d89f398f44aaf = $(`<div id="html_b6826bae11cc43d2a16d89f398f44aaf" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 834 MONTICELLO RD<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/28520523">https://www.airbnb.com/rooms/28520523</a> <br></div>`)[0];
+            popup_9f7bcbc111be492285d66ca7530f98c5.setContent(html_b6826bae11cc43d2a16d89f398f44aaf);
+        
+
+        marker_c806224544784ed69e121a316673ea43.bindPopup(popup_9f7bcbc111be492285d66ca7530f98c5)
+        ;
+
+        
+    
+    
+            var marker_98fa8cdc871b4567b56974d77a7bf5bb = L.marker(
+                [38.02121098371221, -78.47027492046706],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_ad48ee43f6c848f2b170d934a7e17bd8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_98fa8cdc871b4567b56974d77a7bf5bb.setIcon(icon_ad48ee43f6c848f2b170d934a7e17bd8);
+        
+    
+        var popup_63387b7085a14af39b07c3369fa8b780 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be02b9e1e90c46979328c5f5833f84b4 = $(`<div id="html_be02b9e1e90c46979328c5f5833f84b4" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 314 CARLTON RD<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/6004807">https://www.airbnb.com/rooms/6004807</a> <br></div>`)[0];
+            popup_63387b7085a14af39b07c3369fa8b780.setContent(html_be02b9e1e90c46979328c5f5833f84b4);
+        
+
+        marker_98fa8cdc871b4567b56974d77a7bf5bb.bindPopup(popup_63387b7085a14af39b07c3369fa8b780)
+        ;
+
+        
+    
+    
+            var marker_fe6fb6a8040941248a7e72967d0eb166 = L.marker(
+                [38.02529846383733, -78.48040264482681],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_3bc2da5e3dd54d3aaa29b914dd912416 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_fe6fb6a8040941248a7e72967d0eb166.setIcon(icon_3bc2da5e3dd54d3aaa29b914dd912416);
+        
+    
+        var popup_f33c0b119dff432d94721e8fadc3e736 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_347c82aa89274762bf4494688287c054 = $(`<div id="html_347c82aa89274762bf4494688287c054" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 605 MONTICELLO AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 5<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/22101997">https://www.airbnb.com/rooms/22101997</a> <br></div>`)[0];
+            popup_f33c0b119dff432d94721e8fadc3e736.setContent(html_347c82aa89274762bf4494688287c054);
+        
+
+        marker_fe6fb6a8040941248a7e72967d0eb166.bindPopup(popup_f33c0b119dff432d94721e8fadc3e736)
+        ;
+
+        
+    
+    
+            var marker_022f514af00a4c37ad9cb83e7ce083fa = L.marker(
+                [38.0252970702953, -78.47822565848539],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_8772a4cb1dc949979e913d307ea744ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_022f514af00a4c37ad9cb83e7ce083fa.setIcon(icon_8772a4cb1dc949979e913d307ea744ae);
+        
+    
+        var popup_8ac69c4ff34f45f1ab76b68de9acbc5b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9674a072c1a34cbfb2a3e3e354dd0007 = $(`<div id="html_9674a072c1a34cbfb2a3e3e354dd0007" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 520 AVON ST<br><b>Type:</b> hotel<br><b>Guest Capacity:</b> 8<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/13890978">https://www.airbnb.com/rooms/13890978</a> <br></div>`)[0];
+            popup_8ac69c4ff34f45f1ab76b68de9acbc5b.setContent(html_9674a072c1a34cbfb2a3e3e354dd0007);
+        
+
+        marker_022f514af00a4c37ad9cb83e7ce083fa.bindPopup(popup_8ac69c4ff34f45f1ab76b68de9acbc5b)
+        ;
+
+        
+    
+    
+            var marker_35fceae8f4c342199946a81ab99ae468 = L.marker(
+                [38.0252970702953, -78.47822565848539],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_1c91eac9c40248a9b672c0d7e3796c8e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_35fceae8f4c342199946a81ab99ae468.setIcon(icon_1c91eac9c40248a9b672c0d7e3796c8e);
+        
+    
+        var popup_320f13a7df8d417da8b976d4f34b9586 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e6f82f1702aa43dc9fe795da60f84731 = $(`<div id="html_e6f82f1702aa43dc9fe795da60f84731" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 520 AVON ST<br><b>Type:</b> hotel<br><b>Guest Capacity:</b> 2<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/14394002">https://www.airbnb.com/rooms/14394002</a> <br></div>`)[0];
+            popup_320f13a7df8d417da8b976d4f34b9586.setContent(html_e6f82f1702aa43dc9fe795da60f84731);
+        
+
+        marker_35fceae8f4c342199946a81ab99ae468.bindPopup(popup_320f13a7df8d417da8b976d4f34b9586)
+        ;
+
+        
+    
+    
+            var marker_e14cb10f354a43b3bc1bcb64f2c6b410 = L.marker(
+                [38.0252970702953, -78.47822565848539],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_0807b238d6ea4f01b774db0555a4757f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_e14cb10f354a43b3bc1bcb64f2c6b410.setIcon(icon_0807b238d6ea4f01b774db0555a4757f);
+        
+    
+        var popup_77c1a3a900af45a0ad0eae6190d7a5dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ee827a4673841518d9ab6b79ad1254d = $(`<div id="html_3ee827a4673841518d9ab6b79ad1254d" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 520 AVON ST<br><b>Type:</b> hotel<br><b>Guest Capacity:</b> 2<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/24532721">https://www.airbnb.com/rooms/24532721</a> <br></div>`)[0];
+            popup_77c1a3a900af45a0ad0eae6190d7a5dd.setContent(html_3ee827a4673841518d9ab6b79ad1254d);
+        
+
+        marker_e14cb10f354a43b3bc1bcb64f2c6b410.bindPopup(popup_77c1a3a900af45a0ad0eae6190d7a5dd)
+        ;
+
+        
+    
+    
+            var marker_2a5e8c7558084dc19c6992099b72b8a9 = L.marker(
+                [38.023930168403, -78.47748863991195],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_2db53790caa54f619dc9dce1b7b83753 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_2a5e8c7558084dc19c6992099b72b8a9.setIcon(icon_2db53790caa54f619dc9dce1b7b83753);
+        
+    
+        var popup_256419c3a6ef4ef894dff790f4e7d93c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6f638098453747f391eb7af4bcc99be5 = $(`<div id="html_6f638098453747f391eb7af4bcc99be5" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 769 MONTICELLO AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/34271882">https://www.airbnb.com/rooms/34271882</a> <br></div>`)[0];
+            popup_256419c3a6ef4ef894dff790f4e7d93c.setContent(html_6f638098453747f391eb7af4bcc99be5);
+        
+
+        marker_2a5e8c7558084dc19c6992099b72b8a9.bindPopup(popup_256419c3a6ef4ef894dff790f4e7d93c)
+        ;
+
+        
+    
+    
+            var marker_807bbacf5c274a99b76628b93f22a195 = L.marker(
+                [38.02324195706419, -78.47817967182058],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_ea820238e7f14f6f9fc6a6a75ca10a40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_807bbacf5c274a99b76628b93f22a195.setIcon(icon_ea820238e7f14f6f9fc6a6a75ca10a40);
+        
+    
+        var popup_d07263ad1b1847628ef0635951f95a45 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ee815e22307462885a8df35267fcf82 = $(`<div id="html_7ee815e22307462885a8df35267fcf82" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 717 BOLLING AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 6<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/25517351">https://www.airbnb.com/rooms/25517351</a> <br></div>`)[0];
+            popup_d07263ad1b1847628ef0635951f95a45.setContent(html_7ee815e22307462885a8df35267fcf82);
+        
+
+        marker_807bbacf5c274a99b76628b93f22a195.bindPopup(popup_d07263ad1b1847628ef0635951f95a45)
+        ;
+
+        
+    
+    
+            var marker_6c424c87560a49899e1cbc8e8177bcc0 = L.marker(
+                [38.02577460645543, -78.47934828219007],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_a081eae2ddd847d6afb3fb7606ebc325 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6c424c87560a49899e1cbc8e8177bcc0.setIcon(icon_a081eae2ddd847d6afb3fb7606ebc325);
+        
+    
+        var popup_7a56f9170ec94bd99353429f63f35973 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f04749e1409d4d0eabc864b734880e34 = $(`<div id="html_f04749e1409d4d0eabc864b734880e34" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 613 BELMONT AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 8<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/25717437">https://www.airbnb.com/rooms/25717437</a> <br></div>`)[0];
+            popup_7a56f9170ec94bd99353429f63f35973.setContent(html_f04749e1409d4d0eabc864b734880e34);
+        
+
+        marker_6c424c87560a49899e1cbc8e8177bcc0.bindPopup(popup_7a56f9170ec94bd99353429f63f35973)
+        ;
+
+        
+    
+    
+            var marker_3930519a39ab4d25a3f90e7e9219e246 = L.marker(
+                [38.02594437055849, -78.47655893719491],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_12e8db5439d44c398cf9edb545b14864 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_3930519a39ab4d25a3f90e7e9219e246.setIcon(icon_12e8db5439d44c398cf9edb545b14864);
+        
+    
+        var popup_d97a126edb844d7895401c4cf124c817 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76114793fd2d4bf3bc8eb28dd89928a2 = $(`<div id="html_76114793fd2d4bf3bc8eb28dd89928a2" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 330 MONTICELLO RD<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 5<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/6024395">https://www.airbnb.com/rooms/6024395</a> <br></div>`)[0];
+            popup_d97a126edb844d7895401c4cf124c817.setContent(html_76114793fd2d4bf3bc8eb28dd89928a2);
+        
+
+        marker_3930519a39ab4d25a3f90e7e9219e246.bindPopup(popup_d97a126edb844d7895401c4cf124c817)
+        ;
+
+        
+    
+    
+            var marker_dc0a5fd0243d4e8c977bffdef589301c = L.marker(
+                [38.02548868193315, -78.47485000006351],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_f53524e96649463a8fb10a1afbc76e41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_dc0a5fd0243d4e8c977bffdef589301c.setIcon(icon_f53524e96649463a8fb10a1afbc76e41);
+        
+    
+        var popup_bdbecda62d2d490aa3d547464f31cbc9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d4f84d39a36c49e28f838e80d8bb9a62 = $(`<div id="html_d4f84d39a36c49e28f838e80d8bb9a62" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 221 DOUGLAS AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 5<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/24920102">https://www.airbnb.com/rooms/24920102</a> <br></div>`)[0];
+            popup_bdbecda62d2d490aa3d547464f31cbc9.setContent(html_d4f84d39a36c49e28f838e80d8bb9a62);
+        
+
+        marker_dc0a5fd0243d4e8c977bffdef589301c.bindPopup(popup_bdbecda62d2d490aa3d547464f31cbc9)
+        ;
+
+        
+    
+    
+            var marker_66ca5b9833ff4e8b971cb97028f407fb = L.marker(
+                [38.02709653664672, -78.47533803544314],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_0a1722b29046467eb69ce9f1b15fb197 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_66ca5b9833ff4e8b971cb97028f407fb.setIcon(icon_0a1722b29046467eb69ce9f1b15fb197);
+        
+    
+        var popup_d37eeca1b8714637b3fee912fdd81b38 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2a12c19a29e040e292928c7576ffa6ff = $(`<div id="html_2a12c19a29e040e292928c7576ffa6ff" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 712 GRAVES ST<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 6<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/2431334">https://www.airbnb.com/rooms/2431334</a> <br></div>`)[0];
+            popup_d37eeca1b8714637b3fee912fdd81b38.setContent(html_2a12c19a29e040e292928c7576ffa6ff);
+        
+
+        marker_66ca5b9833ff4e8b971cb97028f407fb.bindPopup(popup_d37eeca1b8714637b3fee912fdd81b38)
+        ;
+
+        
+    
+    
+            var marker_aaf7712bea554343853d53c489c4835f = L.marker(
+                [38.02372527891145, -78.51394653557028],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_6bcd3004d05a48ef859f4b4e05f00b2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_aaf7712bea554343853d53c489c4835f.setIcon(icon_6bcd3004d05a48ef859f4b4e05f00b2b);
+        
+    
+        var popup_9518d8dbabaa41719f85cc2a4217c65f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ff5c38cd246414e9d638a911852f3c4 = $(`<div id="html_6ff5c38cd246414e9d638a911852f3c4" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 109 RAYMOND AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 6<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/29965636">https://www.airbnb.com/rooms/29965636</a> <br></div>`)[0];
+            popup_9518d8dbabaa41719f85cc2a4217c65f.setContent(html_6ff5c38cd246414e9d638a911852f3c4);
+        
+
+        marker_aaf7712bea554343853d53c489c4835f.bindPopup(popup_9518d8dbabaa41719f85cc2a4217c65f)
+        ;
+
+        
+    
+    
+            var marker_0c342595236545a484b41fa67f288d57 = L.marker(
+                [38.0223437697127, -78.51008905112414],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_e0c0d87ce1fd402e8ad2f70386d11c4d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0c342595236545a484b41fa67f288d57.setIcon(icon_e0c0d87ce1fd402e8ad2f70386d11c4d);
+        
+    
+        var popup_9b80a32f58a346a8ae067e8052751470 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e909d84b8bc42029a8d63b084ea2c32 = $(`<div id="html_4e909d84b8bc42029a8d63b084ea2c32" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1651 MULBERRY AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 8<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/27752767">https://www.airbnb.com/rooms/27752767</a> <br></div>`)[0];
+            popup_9b80a32f58a346a8ae067e8052751470.setContent(html_4e909d84b8bc42029a8d63b084ea2c32);
+        
+
+        marker_0c342595236545a484b41fa67f288d57.bindPopup(popup_9b80a32f58a346a8ae067e8052751470)
+        ;
+
+        
+    
+    
+            var marker_e977cbe53c8e4950b3a441f4b8c56a85 = L.marker(
+                [38.022293749830254, -78.49899813309938],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_db0f23390dc8417aa7a8b2177c15ff34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e977cbe53c8e4950b3a441f4b8c56a85.setIcon(icon_db0f23390dc8417aa7a8b2177c15ff34);
+        
+    
+        var popup_5d27f5dd0fc94ae4b775bbd72040d9e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f889b6d9b3e14e3e98c65bbd8ba44c8d = $(`<div id="html_f889b6d9b3e14e3e98c65bbd8ba44c8d" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1432 FOREST RIDGE RD<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 15<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/20846106">https://www.airbnb.com/rooms/20846106</a> <br></div>`)[0];
+            popup_5d27f5dd0fc94ae4b775bbd72040d9e2.setContent(html_f889b6d9b3e14e3e98c65bbd8ba44c8d);
+        
+
+        marker_e977cbe53c8e4950b3a441f4b8c56a85.bindPopup(popup_5d27f5dd0fc94ae4b775bbd72040d9e2)
+        ;
+
+        
+    
+    
+            var marker_1c70dac15e304936a1c0fdb84bdfed25 = L.marker(
+                [38.026834106229856, -78.51821435949398],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_4643bc5f05c44655be6c3214b8ab1bd3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_1c70dac15e304936a1c0fdb84bdfed25.setIcon(icon_4643bc5f05c44655be6c3214b8ab1bd3);
+        
+    
+        var popup_1d9967bc7dbb41a281491313ab112184 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e2579bd15214d0a837b26ad9def0c67 = $(`<div id="html_0e2579bd15214d0a837b26ad9def0c67" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 2318 PRICE AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/4961336">https://www.airbnb.com/rooms/4961336</a> <br></div>`)[0];
+            popup_1d9967bc7dbb41a281491313ab112184.setContent(html_0e2579bd15214d0a837b26ad9def0c67);
+        
+
+        marker_1c70dac15e304936a1c0fdb84bdfed25.bindPopup(popup_1d9967bc7dbb41a281491313ab112184)
+        ;
+
+        
+    
+    
+            var marker_9eaa5d069c4f4ba98063d0271c7ae0eb = L.marker(
+                [38.02265802711789, -78.5217822353659],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_10a412df3b3949e3980ea12df87cd640 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_9eaa5d069c4f4ba98063d0271c7ae0eb.setIcon(icon_10a412df3b3949e3980ea12df87cd640);
+        
+    
+        var popup_27ae8f980bdb440c93b3e15c70d6754e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_317f57ac50df470c82a9f3db99034ce9 = $(`<div id="html_317f57ac50df470c82a9f3db99034ce9" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 233 STRIBLING AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/45829101">https://www.airbnb.com/rooms/45829101</a> <br></div>`)[0];
+            popup_27ae8f980bdb440c93b3e15c70d6754e.setContent(html_317f57ac50df470c82a9f3db99034ce9);
+        
+
+        marker_9eaa5d069c4f4ba98063d0271c7ae0eb.bindPopup(popup_27ae8f980bdb440c93b3e15c70d6754e)
+        ;
+
+        
+    
+    
+            var marker_8d3bde2185844610b6a1d045fa56dd13 = L.marker(
+                [38.02749964206004, -78.5169349460021],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_afb92191bd2b408982c578d144d14d9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8d3bde2185844610b6a1d045fa56dd13.setIcon(icon_afb92191bd2b408982c578d144d14d9d);
+        
+    
+        var popup_efde3d07aa2b42369f7a9829a7f96276 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_011d2be0411c4788b4cdb6eb0ffcefad = $(`<div id="html_011d2be0411c4788b4cdb6eb0ffcefad" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 2305 PRICE AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 12<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/45073863">https://www.airbnb.com/rooms/45073863</a> <br></div>`)[0];
+            popup_efde3d07aa2b42369f7a9829a7f96276.setContent(html_011d2be0411c4788b4cdb6eb0ffcefad);
+        
+
+        marker_8d3bde2185844610b6a1d045fa56dd13.bindPopup(popup_efde3d07aa2b42369f7a9829a7f96276)
+        ;
+
+        
+    
+    
+            var marker_be06435f30114b1495283390d45bebf5 = L.marker(
+                [38.02750413112177, -78.51713198997633],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_52fbb5dcf36f4bce8f254920834c24f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_be06435f30114b1495283390d45bebf5.setIcon(icon_52fbb5dcf36f4bce8f254920834c24f0);
+        
+    
+        var popup_2d0322494e134fd69df4173424a629db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_42ab16c36a3e44c9a037ff7e8174f0fc = $(`<div id="html_42ab16c36a3e44c9a037ff7e8174f0fc" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 2307 PRICE AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 8<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/40133437">https://www.airbnb.com/rooms/40133437</a> <br></div>`)[0];
+            popup_2d0322494e134fd69df4173424a629db.setContent(html_42ab16c36a3e44c9a037ff7e8174f0fc);
+        
+
+        marker_be06435f30114b1495283390d45bebf5.bindPopup(popup_2d0322494e134fd69df4173424a629db)
+        ;
+
+        
+    
+    
+            var marker_a59f728d691041c18f2e3421d9a70c33 = L.marker(
+                [38.02996823845262, -78.50844049488686],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_7c791fbe9e2d4b3f9876b58162ce3058 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a59f728d691041c18f2e3421d9a70c33.setIcon(icon_7c791fbe9e2d4b3f9876b58162ce3058);
+        
+    
+        var popup_d9af6982aeaf495ba8be495d71297595 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b5f43a4ea56c4e078fa73da71df20a74 = $(`<div id="html_b5f43a4ea56c4e078fa73da71df20a74" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1708 JEFFERSON PARK AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 8<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/28100440">https://www.airbnb.com/rooms/28100440</a> <br></div>`)[0];
+            popup_d9af6982aeaf495ba8be495d71297595.setContent(html_b5f43a4ea56c4e078fa73da71df20a74);
+        
+
+        marker_a59f728d691041c18f2e3421d9a70c33.bindPopup(popup_d9af6982aeaf495ba8be495d71297595)
+        ;
+
+        
+    
+    
+            var marker_c30d86b6644d42618d302413d87dcba4 = L.marker(
+                [38.032456223728545, -78.48756320414398],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_6901484873c74a11b82e6a3678b486a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_c30d86b6644d42618d302413d87dcba4.setIcon(icon_6901484873c74a11b82e6a3678b486a1);
+        
+    
+        var popup_d78d09d9a1614febb652d159e382bd86 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc033b8c91e94467a26f59dd84c43e81 = $(`<div id="html_cc033b8c91e94467a26f59dd84c43e81" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 515 BROWN ST<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 6<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/14926170">https://www.airbnb.com/rooms/14926170</a> <br></div>`)[0];
+            popup_d78d09d9a1614febb652d159e382bd86.setContent(html_cc033b8c91e94467a26f59dd84c43e81);
+        
+
+        marker_c30d86b6644d42618d302413d87dcba4.bindPopup(popup_d78d09d9a1614febb652d159e382bd86)
+        ;
+
+        
+    
+    
+            var marker_54aa60bdbd3f409aa849a3ab27dd6243 = L.marker(
+                [38.04575347580934, -78.48491741526604],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_958731c07cc84bae9736929d8781091a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_54aa60bdbd3f409aa849a3ab27dd6243.setIcon(icon_958731c07cc84bae9736929d8781091a);
+        
+    
+        var popup_77c4b1545af4404ab4ad138043b5ff6b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_efcacfb7953b4b999ce13330880722dd = $(`<div id="html_efcacfb7953b4b999ce13330880722dd" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1515 RUGBY AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 10<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/18254761">https://www.airbnb.com/rooms/18254761</a> <br></div>`)[0];
+            popup_77c4b1545af4404ab4ad138043b5ff6b.setContent(html_efcacfb7953b4b999ce13330880722dd);
+        
+
+        marker_54aa60bdbd3f409aa849a3ab27dd6243.bindPopup(popup_77c4b1545af4404ab4ad138043b5ff6b)
+        ;
+
+        
+    
+    
+            var marker_d5bd26ca9b8045ed8fd318eb49b281e0 = L.marker(
+                [38.046548794703405, -78.48073590374916],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_ac3c39b9e8594092a4504f3254cedd6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_d5bd26ca9b8045ed8fd318eb49b281e0.setIcon(icon_ac3c39b9e8594092a4504f3254cedd6f);
+        
+    
+        var popup_15ae708b9c8d45879c49bf32c9f31612 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_617752b91d654d1a928f7902bc31fe12 = $(`<div id="html_617752b91d654d1a928f7902bc31fe12" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1404 OXFORD RD<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 6<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/31851272">https://www.airbnb.com/rooms/31851272</a> <br></div>`)[0];
+            popup_15ae708b9c8d45879c49bf32c9f31612.setContent(html_617752b91d654d1a928f7902bc31fe12);
+        
+
+        marker_d5bd26ca9b8045ed8fd318eb49b281e0.bindPopup(popup_15ae708b9c8d45879c49bf32c9f31612)
+        ;
+
+        
+    
+    
+            var marker_df140c6e49414a74ae05fb7ecbfa3ab3 = L.marker(
+                [38.039069005415044, -78.49263365006732],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_55cb86f87d034271921604e7f61630c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_df140c6e49414a74ae05fb7ecbfa3ab3.setIcon(icon_55cb86f87d034271921604e7f61630c8);
+        
+    
+        var popup_ce14bb5a63d94f8ca7eaefd1adac2f8d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f38d0097045a4ac3a1a684fbf3213b1f = $(`<div id="html_f38d0097045a4ac3a1a684fbf3213b1f" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1021 GRADY AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/36485326">https://www.airbnb.com/rooms/36485326</a> <br></div>`)[0];
+            popup_ce14bb5a63d94f8ca7eaefd1adac2f8d.setContent(html_f38d0097045a4ac3a1a684fbf3213b1f);
+        
+
+        marker_df140c6e49414a74ae05fb7ecbfa3ab3.bindPopup(popup_ce14bb5a63d94f8ca7eaefd1adac2f8d)
+        ;
+
+        
+    
+    
+            var marker_5dc7f8e61aea48c7890a1f21dd5345c3 = L.marker(
+                [38.04523988005623, -78.4598187035139],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_a983b18ad1c6420aa3b4faf8b8b8beb8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_5dc7f8e61aea48c7890a1f21dd5345c3.setIcon(icon_a983b18ad1c6420aa3b4faf8b8b8beb8);
+        
+    
+        var popup_b28fc903c2c741b58d803d8b2deb7abd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_05dbf1f8f4c54106b9b0d18cac39eded = $(`<div id="html_05dbf1f8f4c54106b9b0d18cac39eded" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 907 LOCUST LN<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 6<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/plus/26323162">https://www.airbnb.com/rooms/plus/26323162</a> <br></div>`)[0];
+            popup_b28fc903c2c741b58d803d8b2deb7abd.setContent(html_05dbf1f8f4c54106b9b0d18cac39eded);
+        
+
+        marker_5dc7f8e61aea48c7890a1f21dd5345c3.bindPopup(popup_b28fc903c2c741b58d803d8b2deb7abd)
+        ;
+
+        
+    
+    
+            var marker_89bd4cd4944844308bb4767bfeb7d282 = L.marker(
+                [38.04445758659955, -78.46008791479306],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_3f7a816602cb4477a071eea62729c438 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bed", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_89bd4cd4944844308bb4767bfeb7d282.setIcon(icon_3f7a816602cb4477a071eea62729c438);
+        
+    
+        var popup_906324187c454041b2ce70240829a915 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac889418cdc2449da76ff7c9497f0c83 = $(`<div id="html_ac889418cdc2449da76ff7c9497f0c83" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1123 ST CHARLES CT<br><b>Type:</b> apartment<br><b>Guest Capacity:</b> 2<br><b>Link:</b> <a href=" https://www.airbnb.com/rooms/33165198"> https://www.airbnb.com/rooms/33165198</a> <br></div>`)[0];
+            popup_906324187c454041b2ce70240829a915.setContent(html_ac889418cdc2449da76ff7c9497f0c83);
+        
+
+        marker_89bd4cd4944844308bb4767bfeb7d282.bindPopup(popup_906324187c454041b2ce70240829a915)
+        ;
+
+        
+    
+    
+            var marker_f32ac19505a8462a9948731d07f12c5e = L.marker(
+                [38.03971898472152, -78.46351037272707],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_14a9aacc964b45d2929ee04b066045df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_f32ac19505a8462a9948731d07f12c5e.setIcon(icon_14a9aacc964b45d2929ee04b066045df);
+        
+    
+        var popup_2fc66440022c4c229460b73e8df94003 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_786b01e9f0d8481a881fcad3906e83b6 = $(`<div id="html_786b01e9f0d8481a881fcad3906e83b6" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 960 LOCUST AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href=" https://www.airbnb.com/rooms/9129878"> https://www.airbnb.com/rooms/9129878</a> <br></div>`)[0];
+            popup_2fc66440022c4c229460b73e8df94003.setContent(html_786b01e9f0d8481a881fcad3906e83b6);
+        
+
+        marker_f32ac19505a8462a9948731d07f12c5e.bindPopup(popup_2fc66440022c4c229460b73e8df94003)
+        ;
+
+        
+    
+    
+            var marker_17f194417cd24df0aa39e1eac06021fd = L.marker(
+                [38.02972946853465, -78.46602484677538],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_28f65394fbf04b5c87a297a3e7b8215a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bed", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_17f194417cd24df0aa39e1eac06021fd.setIcon(icon_28f65394fbf04b5c87a297a3e7b8215a);
+        
+    
+        var popup_95e7463a58534cabb179d771419eb0a7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_30e6802d7d084712ad0bad8788fc0aa2 = $(`<div id="html_30e6802d7d084712ad0bad8788fc0aa2" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 408 13TH ST NE<br><b>Type:</b> apartment<br><b>Guest Capacity:</b> 6<br><b>Link:</b> <a href=" https://www.airbnb.com/rooms/23698746"> https://www.airbnb.com/rooms/23698746</a> <br></div>`)[0];
+            popup_95e7463a58534cabb179d771419eb0a7.setContent(html_30e6802d7d084712ad0bad8788fc0aa2);
+        
+
+        marker_17f194417cd24df0aa39e1eac06021fd.bindPopup(popup_95e7463a58534cabb179d771419eb0a7)
+        ;
+
+        
+    
+    
+            var marker_8918df93db6a4bb5910798b6bf8a254c = L.marker(
+                [38.02053016812468, -78.47573713293393],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_b8f7bf246ec84ff2a81a25dc74e61d1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_8918df93db6a4bb5910798b6bf8a254c.setIcon(icon_b8f7bf246ec84ff2a81a25dc74e61d1e);
+        
+    
+        var popup_a71023126de5452697a87bbf59cd6e73 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_47c5b5bb10a146d4b27e703b03151a68 = $(`<div id="html_47c5b5bb10a146d4b27e703b03151a68" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 920 BLENHEIM AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href=" https://www.airbnb.com/rooms/44800051"> https://www.airbnb.com/rooms/44800051</a> <br></div>`)[0];
+            popup_a71023126de5452697a87bbf59cd6e73.setContent(html_47c5b5bb10a146d4b27e703b03151a68);
+        
+
+        marker_8918df93db6a4bb5910798b6bf8a254c.bindPopup(popup_a71023126de5452697a87bbf59cd6e73)
+        ;
+
+        
+    
+    
+            var marker_d317fe9ab3414ac28d5c6c0ceefb6ec2 = L.marker(
+                [38.01628622455635, -78.48408706674334],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_85b5bc230d384baf9341e092a3c8b87b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bed", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_d317fe9ab3414ac28d5c6c0ceefb6ec2.setIcon(icon_85b5bc230d384baf9341e092a3c8b87b);
+        
+    
+        var popup_a36d100ba98946cc8b5019d6d6307024 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7bde3991f364d42a661dcefc10ece67 = $(`<div id="html_a7bde3991f364d42a661dcefc10ece67" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 108 BLINCOE LN<br><b>Type:</b> apartment<br><b>Guest Capacity:</b> 3<br><b>Link:</b> <a href=" https://www.airbnb.com/rooms/16228345"> https://www.airbnb.com/rooms/16228345</a> <br></div>`)[0];
+            popup_a36d100ba98946cc8b5019d6d6307024.setContent(html_a7bde3991f364d42a661dcefc10ece67);
+        
+
+        marker_d317fe9ab3414ac28d5c6c0ceefb6ec2.bindPopup(popup_a36d100ba98946cc8b5019d6d6307024)
+        ;
+
+        
+    
+    
+            var marker_bd4422663e7a4175af5060b19050e16e = L.marker(
+                [38.050100612219524, -78.4931310129974],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_6d3e41cc9e954fe8bfdade2cfcfa5882 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_bd4422663e7a4175af5060b19050e16e.setIcon(icon_6d3e41cc9e954fe8bfdade2cfcfa5882);
+        
+    
+        var popup_e664524238f64e8e99077ed88e5b9cfc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a54f3976dc084ca3b1e780d4d8ea1746 = $(`<div id="html_a54f3976dc084ca3b1e780d4d8ea1746" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1115 HILLTOP RD<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 10<br><b>Link:</b> <a href=" https://www.airbnb.com/rooms/19070344"> https://www.airbnb.com/rooms/19070344</a> <br></div>`)[0];
+            popup_e664524238f64e8e99077ed88e5b9cfc.setContent(html_a54f3976dc084ca3b1e780d4d8ea1746);
+        
+
+        marker_bd4422663e7a4175af5060b19050e16e.bindPopup(popup_e664524238f64e8e99077ed88e5b9cfc)
+        ;
+
+        
+    
+    
+            var marker_e771ba4fed9f4321a8424da9cff72fba = L.marker(
+                [38.048384864958585, -78.49455929644795],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_8c099a8c47ec4314936ab2d5dab2699f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_e771ba4fed9f4321a8424da9cff72fba.setIcon(icon_8c099a8c47ec4314936ab2d5dab2699f);
+        
+    
+        var popup_8daacbceb9e74c1a8feb0a0f42cc7b65 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_42680093408d4c40a3c33d54f07db89e = $(`<div id="html_42680093408d4c40a3c33d54f07db89e" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 104 BUCKINGHAM RD<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 6<br><b>Link:</b> <a href=" https://www.airbnb.com/rooms/35822286"> https://www.airbnb.com/rooms/35822286</a> <br></div>`)[0];
+            popup_8daacbceb9e74c1a8feb0a0f42cc7b65.setContent(html_42680093408d4c40a3c33d54f07db89e);
+        
+
+        marker_e771ba4fed9f4321a8424da9cff72fba.bindPopup(popup_8daacbceb9e74c1a8feb0a0f42cc7b65)
+        ;
+
+        
+    
+    
+            var marker_47ba752cfacc4ae890ceda9286900ee6 = L.marker(
+                [38.047204576473895, -78.48281755647653],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_72f053b94ee34c33b719b20ece358ce5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_47ba752cfacc4ae890ceda9286900ee6.setIcon(icon_72f053b94ee34c33b719b20ece358ce5);
+        
+    
+        var popup_46c7ad845154491e88244cb35e743f4e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e8e3b593dee2427a94f885052b198e24 = $(`<div id="html_e8e3b593dee2427a94f885052b198e24" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1459 OXFORD RD<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 5<br><b>Link:</b> <a href=" https://www.airbnb.com/rooms/12710108"> https://www.airbnb.com/rooms/12710108</a> <br></div>`)[0];
+            popup_46c7ad845154491e88244cb35e743f4e.setContent(html_e8e3b593dee2427a94f885052b198e24);
+        
+
+        marker_47ba752cfacc4ae890ceda9286900ee6.bindPopup(popup_46c7ad845154491e88244cb35e743f4e)
+        ;
+
+        
+    
+    
+            var marker_51da815f5de540858e18d4a16be5cb79 = L.marker(
+                [38.02594846700494, -78.47973766046876],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_0a553480650e44aa8195b1c6344fd872 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "key", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_51da815f5de540858e18d4a16be5cb79.setIcon(icon_0a553480650e44aa8195b1c6344fd872);
+        
+    
+        var popup_7eb4ed0e878f4bc08462f3dce511e4d0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f27da1294e1a4d6e880bcdfe9fcf354c = $(`<div id="html_f27da1294e1a4d6e880bcdfe9fcf354c" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 607 BELMONT AVE<br><b>Type:</b> guesthouse<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href=" https://www.airbnb.com/rooms/15949087"> https://www.airbnb.com/rooms/15949087</a> <br></div>`)[0];
+            popup_7eb4ed0e878f4bc08462f3dce511e4d0.setContent(html_f27da1294e1a4d6e880bcdfe9fcf354c);
+        
+
+        marker_51da815f5de540858e18d4a16be5cb79.bindPopup(popup_7eb4ed0e878f4bc08462f3dce511e4d0)
+        ;
+
+        
+    
+    
+            var marker_8f39913028be41599aa756da1b193a13 = L.marker(
+                [38.024097279611496, -78.47561895520963],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_417e57c4f9d1498bbd6ff4dcf434f063 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_8f39913028be41599aa756da1b193a13.setIcon(icon_417e57c4f9d1498bbd6ff4dcf434f063);
+        
+    
+        var popup_9ec98c6680ce43e2a1209e6b655f582f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d15c69be5da4ebbb9c2ccada8dd7e38 = $(`<div id="html_2d15c69be5da4ebbb9c2ccada8dd7e38" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 829 BELMONT AVE<br><b>Type:</b> hotel<br><b>Guest Capacity:</b> 2<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/35616479">https://www.airbnb.com/rooms/35616479</a> <br></div>`)[0];
+            popup_9ec98c6680ce43e2a1209e6b655f582f.setContent(html_2d15c69be5da4ebbb9c2ccada8dd7e38);
+        
+
+        marker_8f39913028be41599aa756da1b193a13.bindPopup(popup_9ec98c6680ce43e2a1209e6b655f582f)
+        ;
+
+        
+    
+    
+            var marker_e3f4d359f15f4baeb681564a9a3e9d87 = L.marker(
+                [38.023584647065235, -78.47456791900946],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_518dd90028904a8581df359244e3c386 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bed", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_e3f4d359f15f4baeb681564a9a3e9d87.setIcon(icon_518dd90028904a8581df359244e3c386);
+        
+    
+        var popup_494f22d3e7414963b760a7fd1b073e97 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_201b8e9772f548d5aa7e89d6b7985f5a = $(`<div id="html_201b8e9772f548d5aa7e89d6b7985f5a" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 915 BELMONT AVE<br><b>Type:</b> apartment<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href=" https://www.airbnb.com/rooms/35614125"> https://www.airbnb.com/rooms/35614125</a> <br></div>`)[0];
+            popup_494f22d3e7414963b760a7fd1b073e97.setContent(html_201b8e9772f548d5aa7e89d6b7985f5a);
+        
+
+        marker_e3f4d359f15f4baeb681564a9a3e9d87.bindPopup(popup_494f22d3e7414963b760a7fd1b073e97)
+        ;
+
+        
+    
+    
+            var marker_527428a02a934bec90cb268150c32f77 = L.marker(
+                [38.01753583815818, -78.47281202702078],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_114c1999055d47389a9356e299f4a256 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_527428a02a934bec90cb268150c32f77.setIcon(icon_114c1999055d47389a9356e299f4a256);
+        
+    
+        var popup_aa79680c2a3f487a8a752e5d633d7019 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_895316470cfc420e8a57603dc623a310 = $(`<div id="html_895316470cfc420e8a57603dc623a310" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1510 MONTICELLO RD<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href=" https://www.airbnb.com/rooms/25378048"> https://www.airbnb.com/rooms/25378048</a> <br></div>`)[0];
+            popup_aa79680c2a3f487a8a752e5d633d7019.setContent(html_895316470cfc420e8a57603dc623a310);
+        
+
+        marker_527428a02a934bec90cb268150c32f77.bindPopup(popup_aa79680c2a3f487a8a752e5d633d7019)
+        ;
+
+        
+    
+    
+            var marker_4d6a39cdeae94d82a497207476efdc23 = L.marker(
+                [38.01653695563392, -78.4723222395863],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_2b66471571404ce884701af57c54b05a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_4d6a39cdeae94d82a497207476efdc23.setIcon(icon_2b66471571404ce884701af57c54b05a);
+        
+    
+        var popup_01e6c4eacba94cd6b95a5a1343a72165 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_64cfa5682b3b4fc7beb93e1de0ce1302 = $(`<div id="html_64cfa5682b3b4fc7beb93e1de0ce1302" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 959 RIVES ST<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 6<br><b>Link:</b> <a href=" https://www.airbnb.com/rooms/13712453"> https://www.airbnb.com/rooms/13712453</a> <br></div>`)[0];
+            popup_01e6c4eacba94cd6b95a5a1343a72165.setContent(html_64cfa5682b3b4fc7beb93e1de0ce1302);
+        
+
+        marker_4d6a39cdeae94d82a497207476efdc23.bindPopup(popup_01e6c4eacba94cd6b95a5a1343a72165)
+        ;
+
+        
+    
+    
+            var marker_fc29cdd3cb5244308264db67496a4ed3 = L.marker(
+                [38.02131328713906, -78.47621785103256],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_3e85ca8870e54e38983363c349164914 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "key", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_fc29cdd3cb5244308264db67496a4ed3.setIcon(icon_3e85ca8870e54e38983363c349164914);
+        
+    
+        var popup_c56c0aa8b35149dbb2b84e2234ba2dc8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f48bc4b26fb24a4084d23ad85ba1e3c1 = $(`<div id="html_f48bc4b26fb24a4084d23ad85ba1e3c1" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 907 BLENHEIM AVE<br><b>Type:</b> guesthouse<br><b>Guest Capacity:</b> 2<br><b>Link:</b> <a href=" https://www.airbnb.com/rooms/10983225"> https://www.airbnb.com/rooms/10983225</a> <br></div>`)[0];
+            popup_c56c0aa8b35149dbb2b84e2234ba2dc8.setContent(html_f48bc4b26fb24a4084d23ad85ba1e3c1);
+        
+
+        marker_fc29cdd3cb5244308264db67496a4ed3.bindPopup(popup_c56c0aa8b35149dbb2b84e2234ba2dc8)
+        ;
+
+        
+    
+    
+            var marker_2e5cbf0f6aee4d2f81d008c5dcbf18d7 = L.marker(
+                [38.01754806727632, -78.4838728075333],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_ab1d3f51c6f44a0191e9a0d976be8ca0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2e5cbf0f6aee4d2f81d008c5dcbf18d7.setIcon(icon_ab1d3f51c6f44a0191e9a0d976be8ca0);
+        
+    
+        var popup_fa3aa2e360284cde88411aa77d1f1dec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f1e8daecf0ee4c6ba9ebe9c386951a5b = $(`<div id="html_f1e8daecf0ee4c6ba9ebe9c386951a5b" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1392 AVON ST<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 8<br><b>Link:</b> <a href=" https://www.airbnb.com/rooms/16885224"> https://www.airbnb.com/rooms/16885224</a> <br></div>`)[0];
+            popup_fa3aa2e360284cde88411aa77d1f1dec.setContent(html_f1e8daecf0ee4c6ba9ebe9c386951a5b);
+        
+
+        marker_2e5cbf0f6aee4d2f81d008c5dcbf18d7.bindPopup(popup_fa3aa2e360284cde88411aa77d1f1dec)
+        ;
+
+        
+    
+    
+            var marker_4b0d8c73a6c4424397369a14ea366d5c = L.marker(
+                [38.03648802783139, -78.47749009609639],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_1806ea37421c4756a8592fa417f6723a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4b0d8c73a6c4424397369a14ea366d5c.setIcon(icon_1806ea37421c4756a8592fa417f6723a);
+        
+    
+        var popup_21b076841b1242b79276ab53c58ccaa8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_36bd879ce2974ad7ace3c029c8ce7335 = $(`<div id="html_36bd879ce2974ad7ace3c029c8ce7335" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 700 NORTHWOOD AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 10<br><b>Link:</b> <a href=" https://www.airbnb.com/rooms/496282"> https://www.airbnb.com/rooms/496282</a> <br></div>`)[0];
+            popup_21b076841b1242b79276ab53c58ccaa8.setContent(html_36bd879ce2974ad7ace3c029c8ce7335);
+        
+
+        marker_4b0d8c73a6c4424397369a14ea366d5c.bindPopup(popup_21b076841b1242b79276ab53c58ccaa8)
+        ;
+
+        
+    
+    
+            var marker_b25a34b8b99f401aa4450392377f08a1 = L.marker(
+                [38.02892538627718, -78.47881770540695],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_021430e7dee54f48adb576ed42e2a435 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bed", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_b25a34b8b99f401aa4450392377f08a1.setIcon(icon_021430e7dee54f48adb576ed42e2a435);
+        
+    
+        var popup_b8151f7eba14407db726e22dba98fb2d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1683776f38c146ceaa185bc167f25799 = $(`<div id="html_1683776f38c146ceaa185bc167f25799" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 550 E WATER ST<br><b>Type:</b> apartment<br><b>Guest Capacity:</b> 6<br><b>Link:</b> <a href=" https://www.airbnb.com/rooms/42021058"> https://www.airbnb.com/rooms/42021058</a> <br></div>`)[0];
+            popup_b8151f7eba14407db726e22dba98fb2d.setContent(html_1683776f38c146ceaa185bc167f25799);
+        
+
+        marker_b25a34b8b99f401aa4450392377f08a1.bindPopup(popup_b8151f7eba14407db726e22dba98fb2d)
+        ;
+
+        
+    
+    
+            var marker_38983c7e82d84600a4d33d1c99a8e967 = L.marker(
+                [38.03035111761202, -78.48361734815242],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_72f1121bc3a24e28aac9842fa0de971f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bed", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_38983c7e82d84600a4d33d1c99a8e967.setIcon(icon_72f1121bc3a24e28aac9842fa0de971f);
+        
+    
+        var popup_f75c14f967674027b2061be797ca9ed1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93845f733b3f4f2c959c592a1805c1c3 = $(`<div id="html_93845f733b3f4f2c959c592a1805c1c3" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 218 W WATER ST<br><b>Type:</b> apartment<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href=" https://www.airbnb.com/rooms/36136707"> https://www.airbnb.com/rooms/36136707</a> <br></div>`)[0];
+            popup_f75c14f967674027b2061be797ca9ed1.setContent(html_93845f733b3f4f2c959c592a1805c1c3);
+        
+
+        marker_38983c7e82d84600a4d33d1c99a8e967.bindPopup(popup_f75c14f967674027b2061be797ca9ed1)
+        ;
+
+        
+    
+    
+            var marker_a7b7030e642646439a2213726954406c = L.marker(
+                [38.02627687434518, -78.47810165024951],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_2ac1658bc6dc4216aef5dbf4d3b9b07a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bed", "iconColor": "white", "markerColor": "lightblue", "prefix": "fa"}
+            );
+            marker_a7b7030e642646439a2213726954406c.setIcon(icon_2ac1658bc6dc4216aef5dbf4d3b9b07a);
+        
+    
+        var popup_d02f6df3ebe54b7c80fbc843168f2cbb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_93042ccf1f514bd4842a05198367c41d = $(`<div id="html_93042ccf1f514bd4842a05198367c41d" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 415 AVON ST<br><b>Type:</b> apartment<br><b>Guest Capacity:</b> 5<br><b>Link:</b> <a href=" https://www.airbnb.com/rooms/49732283"> https://www.airbnb.com/rooms/49732283</a> <br></div>`)[0];
+            popup_d02f6df3ebe54b7c80fbc843168f2cbb.setContent(html_93042ccf1f514bd4842a05198367c41d);
+        
+
+        marker_a7b7030e642646439a2213726954406c.bindPopup(popup_d02f6df3ebe54b7c80fbc843168f2cbb)
+        ;
+
+        
+    
+    
+            var marker_2340a917aa494e33a9245c83dee37b49 = L.marker(
+                [38.01849402878329, -78.4736401814614],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_b7f989afc64a42c3b21839d45d5e311c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_2340a917aa494e33a9245c83dee37b49.setIcon(icon_b7f989afc64a42c3b21839d45d5e311c);
+        
+    
+        var popup_d91be2d1fdbd44c6b8f1148d41e3344e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7ceaa4d41f14195bd6c45f203b9d997 = $(`<div id="html_d7ceaa4d41f14195bd6c45f203b9d997" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1112 MONTROSE AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href=" https://www.airbnb.com/rooms/49725962"> https://www.airbnb.com/rooms/49725962</a> <br></div>`)[0];
+            popup_d91be2d1fdbd44c6b8f1148d41e3344e.setContent(html_d7ceaa4d41f14195bd6c45f203b9d997);
+        
+
+        marker_2340a917aa494e33a9245c83dee37b49.bindPopup(popup_d91be2d1fdbd44c6b8f1148d41e3344e)
+        ;
+
+        
+    
+    
+            var marker_f8308f2b81bc45f89d444c53955c4985 = L.marker(
+                [38.018168584055864, -78.47631364731463],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_296075e3cd56486c9e01d6a8cdffe4cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_f8308f2b81bc45f89d444c53955c4985.setIcon(icon_296075e3cd56486c9e01d6a8cdffe4cc);
+        
+    
+        var popup_fc57aadeff3c42df9da4ca21755ebef2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2c07fca6cfe443fa44640cdfee1ab63 = $(`<div id="html_a2c07fca6cfe443fa44640cdfee1ab63" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1009 ALTAVISTA AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 3<br><b>Link:</b> <a href=" https://www.airbnb.com/rooms/49675391"> https://www.airbnb.com/rooms/49675391</a> <br></div>`)[0];
+            popup_fc57aadeff3c42df9da4ca21755ebef2.setContent(html_a2c07fca6cfe443fa44640cdfee1ab63);
+        
+
+        marker_f8308f2b81bc45f89d444c53955c4985.bindPopup(popup_fc57aadeff3c42df9da4ca21755ebef2)
+        ;
+
+        
+    
+    
+            var marker_af696624a1654b72bd400d73841f7881 = L.marker(
+                [38.019391795084985, -78.48217589449403],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_06d7acf571744dd1ab320be37d6d9b67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_af696624a1654b72bd400d73841f7881.setIcon(icon_06d7acf571744dd1ab320be37d6d9b67);
+        
+    
+        var popup_46f8ea3b75dc4ea3a19390a072731ae7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2b2bb169daf145bba251add2bf99c076 = $(`<div id="html_2b2bb169daf145bba251add2bf99c076" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 704 DRUID AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href=" https://www.airbnb.com/rooms/29846591"> https://www.airbnb.com/rooms/29846591</a> <br></div>`)[0];
+            popup_46f8ea3b75dc4ea3a19390a072731ae7.setContent(html_2b2bb169daf145bba251add2bf99c076);
+        
+
+        marker_af696624a1654b72bd400d73841f7881.bindPopup(popup_46f8ea3b75dc4ea3a19390a072731ae7)
+        ;
+
+        
+    
+    
+            var marker_b384f14d829f441ab750bca584474475 = L.marker(
+                [38.02245277688938, -78.50884154904168],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_d24e48bcd11e49fa8c252fd1c5e125c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_b384f14d829f441ab750bca584474475.setIcon(icon_d24e48bcd11e49fa8c252fd1c5e125c7);
+        
+    
+        var popup_bb2303e6efe54f8bb940a0e6ed2603e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fceb97f56e19431c865e56a93a801870 = $(`<div id="html_fceb97f56e19431c865e56a93a801870" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1631 CHERRY AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 6<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/30568760">https://www.airbnb.com/rooms/30568760</a> <br></div>`)[0];
+            popup_bb2303e6efe54f8bb940a0e6ed2603e4.setContent(html_fceb97f56e19431c865e56a93a801870);
+        
+
+        marker_b384f14d829f441ab750bca584474475.bindPopup(popup_bb2303e6efe54f8bb940a0e6ed2603e4)
+        ;
+
+        
+    
+    
+            var marker_188e994ad59242bd803a80a9e71db51c = L.marker(
+                [38.01789879203061, -78.5164861597799],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_df1e77bbb6dc4879a8c825883237acc9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_188e994ad59242bd803a80a9e71db51c.setIcon(icon_df1e77bbb6dc4879a8c825883237acc9);
+        
+    
+        var popup_00aabfb89cae4c1eb71d44bfba4359f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09ae740932e14a5295f0828225a065b4 = $(`<div id="html_09ae740932e14a5295f0828225a065b4" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 2662 JEFFERSON PARK CIR<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 10<br><b>Link:</b> <a href=" https://www.airbnb.com/rooms/plus/14035517"> https://www.airbnb.com/rooms/plus/14035517</a> <br></div>`)[0];
+            popup_00aabfb89cae4c1eb71d44bfba4359f4.setContent(html_09ae740932e14a5295f0828225a065b4);
+        
+
+        marker_188e994ad59242bd803a80a9e71db51c.bindPopup(popup_00aabfb89cae4c1eb71d44bfba4359f4)
+        ;
+
+        
+    
+    
+            var marker_80f6742adb6d4bf0803c42197ae406d2 = L.marker(
+                [38.02372527891145, -78.51394653557028],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_bb19a8cc062c4acfbe71ad9ba1987f65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_80f6742adb6d4bf0803c42197ae406d2.setIcon(icon_bb19a8cc062c4acfbe71ad9ba1987f65);
+        
+    
+        var popup_a7f5a163361243168217dbbc0873b451 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8341908ecab24265a648670367bafefd = $(`<div id="html_8341908ecab24265a648670367bafefd" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 109 RAYMOND AVE<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 6<br><b>Link:</b> <a href=" https://www.airbnb.com/rooms/29965636"> https://www.airbnb.com/rooms/29965636</a> <br></div>`)[0];
+            popup_a7f5a163361243168217dbbc0873b451.setContent(html_8341908ecab24265a648670367bafefd);
+        
+
+        marker_80f6742adb6d4bf0803c42197ae406d2.bindPopup(popup_a7f5a163361243168217dbbc0873b451)
+        ;
+
+        
+    
+    
+            var marker_64a1bb9e818040318ee834a0559a97dd = L.marker(
+                [38.04961880271126, -78.48355519235119],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_accb20f3dabe4d7eb599df1d778e1102 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_64a1bb9e818040318ee834a0559a97dd.setIcon(icon_accb20f3dabe4d7eb599df1d778e1102);
+        
+    
+        var popup_1c8c9a36f9b54cc6bd969e6b2e47e242 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d0e0db946ee94f998ad9d152d2c0b5a5 = $(`<div id="html_d0e0db946ee94f998ad9d152d2c0b5a5" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1502 GREENLEAF LN<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 6<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/21241880">https://www.airbnb.com/rooms/21241880</a> <br></div>`)[0];
+            popup_1c8c9a36f9b54cc6bd969e6b2e47e242.setContent(html_d0e0db946ee94f998ad9d152d2c0b5a5);
+        
+
+        marker_64a1bb9e818040318ee834a0559a97dd.bindPopup(popup_1c8c9a36f9b54cc6bd969e6b2e47e242)
+        ;
+
+        
+    
+    
+            var marker_db9b42f336214942b640742ddc7c0400 = L.marker(
+                [38.046913299145686, -78.48432909398744],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_1297427051614514992b56e9e479a70e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_db9b42f336214942b640742ddc7c0400.setIcon(icon_1297427051614514992b56e9e479a70e);
+        
+    
+        var popup_11ee98ad2c9344168e3312a0bd4df471 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_27519fa2f86d46b1822c59b83d40a724 = $(`<div id="html_27519fa2f86d46b1822c59b83d40a724" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1508 OXFORD RD<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 6<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/2400071">https://www.airbnb.com/rooms/2400071</a> <br></div>`)[0];
+            popup_11ee98ad2c9344168e3312a0bd4df471.setContent(html_27519fa2f86d46b1822c59b83d40a724);
+        
+
+        marker_db9b42f336214942b640742ddc7c0400.bindPopup(popup_11ee98ad2c9344168e3312a0bd4df471)
+        ;
+
+        
+    
+    
+            var marker_73a4d886813b43a3a1c000e96eb8467b = L.marker(
+                [38.051207682467656, -78.48262744667292],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_60e8cdd39e444121aaaff5c3b19f981e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_73a4d886813b43a3a1c000e96eb8467b.setIcon(icon_60e8cdd39e444121aaaff5c3b19f981e);
+        
+    
+        var popup_c52e57b0243748fc83cc9947a9c1a295 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f47187a096934133bd8dc4344c0a7bb8 = $(`<div id="html_f47187a096934133bd8dc4344c0a7bb8" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1620 ROSE HILL DR<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 7<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/51225982">https://www.airbnb.com/rooms/51225982</a> <br></div>`)[0];
+            popup_c52e57b0243748fc83cc9947a9c1a295.setContent(html_f47187a096934133bd8dc4344c0a7bb8);
+        
+
+        marker_73a4d886813b43a3a1c000e96eb8467b.bindPopup(popup_c52e57b0243748fc83cc9947a9c1a295)
+        ;
+
+        
+    
+    
+            var marker_56705efea7604af2a217c1a540775e5a = L.marker(
+                [38.04926027951889, -78.48730732864043],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_e89ff57a99114a049c28f74bcf642bc3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_56705efea7604af2a217c1a540775e5a.setIcon(icon_e89ff57a99114a049c28f74bcf642bc3);
+        
+    
+        var popup_f3e8d46a1b124279be140e9e6f082bd9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_332ebad2247c48a28471e535a00c1175 = $(`<div id="html_332ebad2247c48a28471e535a00c1175" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1616 CAMBRIDGE CIR<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href="https://www.vrbo.com/384438">https://www.vrbo.com/384438</a> <br></div>`)[0];
+            popup_f3e8d46a1b124279be140e9e6f082bd9.setContent(html_332ebad2247c48a28471e535a00c1175);
+        
+
+        marker_56705efea7604af2a217c1a540775e5a.bindPopup(popup_f3e8d46a1b124279be140e9e6f082bd9)
+        ;
+
+        
+    
+    
+            var marker_2f01aa785a734a8cbbffd98610170873 = L.marker(
+                [38.05134948212263, -78.48717706278623],
+                {}
+            ).addTo(map_5eaa197bc24c4e81b38ec46fcc8c8ce0);
+        
+    
+            var icon_cb2da979e352424cb788794569fe3ba0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_2f01aa785a734a8cbbffd98610170873.setIcon(icon_cb2da979e352424cb788794569fe3ba0);
+        
+    
+        var popup_2af08fb2615e43168337c89ab4862b06 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_287e3b79ed93424e804e8bbc34f26eeb = $(`<div id="html_287e3b79ed93424e804e8bbc34f26eeb" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 1410 GENTRY LN<br><b>Type:</b> whole home<br><b>Guest Capacity:</b> 4<br><b>Link:</b> <a href="https://www.airbnb.com/rooms/28983335">https://www.airbnb.com/rooms/28983335</a> <br></div>`)[0];
+            popup_2af08fb2615e43168337c89ab4862b06.setContent(html_287e3b79ed93424e804e8bbc34f26eeb);
+        
+
+        marker_2f01aa785a734a8cbbffd98610170873.bindPopup(popup_2af08fb2615e43168337c89ab4862b06)
+        ;
+
+        
+    
+</script>
